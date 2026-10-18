@@ -1,0 +1,84 @@
+{
+  "tipoDocumento": "08",
+  "clave": "50601102600310133333300100001080000000001112345678",
+  "proveedorSistemas": "3101333333",
+  "codigoActividadReceptor": "011301",
+  "numeroConsecutivo": "00100001080000000001",
+  "fechaEmision": "2026-10-01T09:00:00-06:00",
+  "emisor": {
+    "nombre": "PRODUCTOR EJEMPLO (NO INSCRITO)",
+    "identificacion": {
+      "tipo": "01",
+      "numero": "100000909"
+    },
+    "ubicacion": {
+      "provincia": "1",
+      "canton": "09",
+      "distrito": "02",
+      "otrasSenas": "Finca La Cosecha"
+    },
+    "telefono": {
+      "codigoPais": "506",
+      "numTelefono": "22000505"
+    },
+    "correoElectronico": [
+      "juanperez@example.com"
+    ]
+  },
+  "receptor": {
+    "nombre": "BENEFICIO DE CAFE EJEMPLO S.A.",
+    "identificacion": {
+      "tipo": "02",
+      "numero": "3101333333"
+    },
+    "nombreComercial": "Beneficio Ejemplo",
+    "ubicacion": {
+      "provincia": "1",
+      "canton": "19",
+      "distrito": "01",
+      "otrasSenas": "Frente al Beneficio Central"
+    },
+    "telefono": {
+      "codigoPais": "506",
+      "numTelefono": "22000303"
+    },
+    "correoElectronico": "compras@example.com"
+  },
+  "condicionVenta": "01",
+  "detalleServicio": [
+    {
+      "numeroLinea": 1,
+      "codigoCABYS": "0113101000000",
+      "cantidad": "50",
+      "unidadMedida": "Unid",
+      "detalle": "Compra de café en fruta en cosecha directa",
+      "precioUnitario": "45000",
+      "impuestos": [
+        {
+          "codigo": "01",
+          "codigoTarifaIVA": "02"
+        }
+      ]
+    }
+  ],
+  "resumenFactura": {
+    "codigoTipoMoneda": {
+      "codigoMoneda": "CRC",
+      "tipoCambio": "1"
+    },
+    "mediosPago": [
+      {
+        "tipoMedioPago": "04"
+      }
+    ]
+  },
+  "informacionReferencia": [
+    {
+      "tipoDocIR": "14",
+      "numero": "REC-AGRO-00123",
+      "fechaEmisionIR": "2026-10-01T09:00:00-06:00",
+      "codigo": "04",
+      "razon": "Comprobante de compra a productor del regimen especial agropecuario"
+    }
+  ]
+}

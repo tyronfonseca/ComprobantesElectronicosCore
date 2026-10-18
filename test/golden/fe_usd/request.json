@@ -1,0 +1,77 @@
+{
+  "tipoDocumento": "01",
+  "clave": "50601092615580000000100100001010000000030137313731",
+  "proveedorSistemas": "3101225890",
+  "codigoActividadEmisor": "6201.0",
+  "codigoActividadReceptor": "6810.0",
+  "numeroConsecutivo": "00100001010000000030",
+  "fechaEmision": "2026-09-01T13:48:02-06:00",
+  "emisor": {
+    "nombre": "EMISOR EJEMPLO CON DIMEX",
+    "identificacion": {
+      "tipo": "03",
+      "numero": "155800000001"
+    },
+    "nombreComercial": "Software Ejemplo",
+    "ubicacion": {
+      "provincia": "1",
+      "canton": "08",
+      "distrito": "01",
+      "barrio": "Centro",
+      "otrasSenas": "Casa 12, portón negro"
+    },
+    "telefono": {
+      "codigoPais": "506",
+      "numTelefono": "22000101"
+    },
+    "correoElectronico": [
+      "facturacion@example.com"
+    ]
+  },
+  "receptor": {
+    "nombre": "CLIENTE EJEMPLO S.A.",
+    "identificacion": {
+      "tipo": "02",
+      "numero": "3101000202"
+    },
+    "ubicacion": {
+      "provincia": "4",
+      "canton": "08",
+      "distrito": "03",
+      "otrasSenas": "Edificio Ejemplo, piso 3"
+    },
+    "telefono": {
+      "codigoPais": "506",
+      "numTelefono": "22000202"
+    },
+    "correoElectronico": "facturaelectronica@example.com"
+  },
+  "condicionVenta": "01",
+  "detalleServicio": [
+    {
+      "numeroLinea": 1,
+      "codigoCABYS": "8314100000200",
+      "cantidad": "1",
+      "unidadMedida": "Sp",
+      "detalle": "Orden de compra 4500907121 - Septiembre 2026",
+      "precioUnitario": "175.25",
+      "impuestos": [
+        {
+          "codigo": "01",
+          "codigoTarifaIVA": "08"
+        }
+      ]
+    }
+  ],
+  "resumenFactura": {
+    "codigoTipoMoneda": {
+      "codigoMoneda": "USD",
+      "tipoCambio": "512.37"
+    },
+    "mediosPago": [
+      {
+        "tipoMedioPago": "04"
+      }
+    ]
+  }
+}

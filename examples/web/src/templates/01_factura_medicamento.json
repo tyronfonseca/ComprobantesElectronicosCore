@@ -1,0 +1,65 @@
+{
+  "tipoDocumento": "01",
+  "clave": "50601102600310100060600100001010000000005110000005",
+  "proveedorSistemas": "3101000999",
+  "numeroConsecutivo": "00100001010000000005",
+  "fechaEmision": "2026-10-01T10:00:00-06:00",
+  "codigoActividadEmisor": "4772.0",
+  "emisor": {
+    "nombre": "FARMACIA EJEMPLO S.A.",
+    "identificacion": {
+      "tipo": "02",
+      "numero": "3101000606"
+    },
+    "nombreComercial": "Farmacia Ejemplo",
+    "ubicacion": {
+      "provincia": "1",
+      "canton": "01",
+      "distrito": "08",
+      "otrasSenas": "Avenida 10, edificio azul, piso 2"
+    },
+    "telefono": {
+      "codigoPais": "506",
+      "numTelefono": "22000101"
+    },
+    "correoElectronico": [
+      "ventas@farmacia.example.com"
+    ]
+  },
+  "receptor": {
+    "nombre": "JUAN EJEMPLO EJEMPLO",
+    "identificacion": {
+      "tipo": "01",
+      "numero": "100000606"
+    },
+    "correoElectronico": "juan@correo.example.com"
+  },
+  "condicionVenta": "01",
+  "detalleServicio": [
+    {
+      "codigoCABYS": "3562100000000",
+      "cantidad": "2",
+      "unidadMedida": "Unid",
+      "detalle": "Acetaminofén 500 mg, caja de 10 tabletas",
+      "precioUnitario": "1500",
+      "registroMedicamento": "MS-0000001",
+      "formaFarmaceutica": "199",
+      "impuestos": [
+        {
+          "codigo": "01",
+          "codigoTarifaIVA": "03"
+        }
+      ]
+    }
+  ],
+  "resumenFactura": {
+    "codigoTipoMoneda": {
+      "codigoMoneda": "CRC"
+    },
+    "mediosPago": [
+      {
+        "tipoMedioPago": "06"
+      }
+    ]
+  }
+}

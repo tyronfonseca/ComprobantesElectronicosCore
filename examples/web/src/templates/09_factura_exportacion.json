@@ -1,0 +1,79 @@
+{
+  "tipoDocumento": "09",
+  "clave": "50601102600310100010100100001090000000001190000001",
+  "proveedorSistemas": "3101000999",
+  "numeroConsecutivo": "00100001090000000001",
+  "fechaEmision": "2026-10-01T10:00:00-06:00",
+  "codigoActividadEmisor": "6201.0",
+  "emisor": {
+    "nombre": "SOLUCIONES DE SOFTWARE EJEMPLO S.A.",
+    "identificacion": {
+      "tipo": "02",
+      "numero": "3101000101"
+    },
+    "nombreComercial": "Software Ejemplo",
+    "ubicacion": {
+      "provincia": "1",
+      "canton": "01",
+      "distrito": "08",
+      "otrasSenas": "Avenida 10, edificio azul, piso 2"
+    },
+    "telefono": {
+      "codigoPais": "506",
+      "numTelefono": "22000101"
+    },
+    "correoElectronico": [
+      "facturacion@software.example.com"
+    ]
+  },
+  "receptor": {
+    "nombre": "EXAMPLE IMPORTS LLC",
+    "identificacion": {
+      "tipo": "05",
+      "numero": "900000001"
+    },
+    "otrasSenasExtranjero": "100 Example Street, Springfield, USA",
+    "correoElectronico": "ap@imports.example.com"
+  },
+  "condicionVenta": "01",
+  "detalleServicio": [
+    {
+      "codigoCABYS": "8314100000200",
+      "cantidad": "80",
+      "unidadMedida": "h",
+      "detalle": "Software development services",
+      "precioUnitario": "55",
+      "impuestos": [
+        {
+          "codigo": "01",
+          "codigoTarifaIVA": "10"
+        }
+      ]
+    },
+    {
+      "codigoCABYS": "4523000000000",
+      "partidaArancelaria": "847130000000",
+      "cantidad": "2",
+      "unidadMedida": "Unid",
+      "detalle": "Laptop computer",
+      "precioUnitario": "900",
+      "impuestos": [
+        {
+          "codigo": "01",
+          "codigoTarifaIVA": "10"
+        }
+      ]
+    }
+  ],
+  "resumenFactura": {
+    "codigoTipoMoneda": {
+      "codigoMoneda": "USD",
+      "tipoCambio": "505.25"
+    },
+    "mediosPago": [
+      {
+        "tipoMedioPago": "04"
+      }
+    ]
+  }
+}

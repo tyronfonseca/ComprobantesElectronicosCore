@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TiqueteElectronico xmlns="https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/tiqueteElectronico" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Clave>50601102600310144444400100001040000000001112345678</Clave>
+  <ProveedorSistemas>3101444444</ProveedorSistemas>
+  <CodigoActividadEmisor>471101</CodigoActividadEmisor>
+  <NumeroConsecutivo>00100001040000000001</NumeroConsecutivo>
+  <FechaEmision>2026-10-01T11:00:00-06:00</FechaEmision>
+  <Emisor>
+    <Nombre>SUPERMERCADO EJEMPLO S.A.</Nombre>
+    <Identificacion>
+      <Tipo>02</Tipo>
+      <Numero>3101444444</Numero>
+    </Identificacion>
+    <NombreComercial>Super Ejemplo</NombreComercial>
+    <Ubicacion>
+      <Provincia>1</Provincia>
+      <Canton>01</Canton>
+      <Distrito>01</Distrito>
+      <OtrasSenas>Calle 5, Avenida Central</OtrasSenas>
+    </Ubicacion>
+    <Telefono>
+      <CodigoPais>506</CodigoPais>
+      <NumTelefono>22334455</NumTelefono>
+    </Telefono>
+    <CorreoElectronico>caja@example.com</CorreoElectronico>
+  </Emisor>
+  <CondicionVenta>01</CondicionVenta>
+  <DetalleServicio>
+    <LineaDetalle>
+      <NumeroLinea>1</NumeroLinea>
+      <CodigoCABYS>2399901000000</CodigoCABYS>
+      <Cantidad>2.000</Cantidad>
+      <UnidadMedida>Unid</UnidadMedida>
+      <Detalle>Artículos varios de consumo de primera necesidad</Detalle>
+      <PrecioUnitario>3500.00000</PrecioUnitario>
+      <MontoTotal>7000.00000</MontoTotal>
+      <SubTotal>7000.00000</SubTotal>
+      <BaseImponible>7000.00000</BaseImponible>
+      <Impuesto>
+        <Codigo>01</Codigo>
+        <CodigoTarifaIVA>08</CodigoTarifaIVA>
+        <Tarifa>13.00</Tarifa>
+        <Monto>910.00000</Monto>
+      </Impuesto>
+      <ImpuestoAsumidoEmisorFabrica>0.00000</ImpuestoAsumidoEmisorFabrica>
+      <ImpuestoNeto>910.00000</ImpuestoNeto>
+      <MontoTotalLinea>7910.00000</MontoTotalLinea>
+    </LineaDetalle>
+  </DetalleServicio>
+  <ResumenFactura>
+    <CodigoTipoMoneda>
+      <CodigoMoneda>CRC</CodigoMoneda>
+      <TipoCambio>1.00000</TipoCambio>
+    </CodigoTipoMoneda>
+    <TotalMercanciasGravadas>7000.00000</TotalMercanciasGravadas>
+    <TotalGravado>7000.00000</TotalGravado>
+    <TotalVenta>7000.00000</TotalVenta>
+    <TotalVentaNeta>7000.00000</TotalVentaNeta>
+    <TotalDesgloseImpuesto>
+      <Codigo>01</Codigo>
+      <CodigoTarifaIVA>08</CodigoTarifaIVA>
+      <TotalMontoImpuesto>910.00000</TotalMontoImpuesto>
+    </TotalDesgloseImpuesto>
+    <TotalImpuesto>910.00000</TotalImpuesto>
+    <MedioPago>
+      <TipoMedioPago>01</TipoMedioPago>
+      <TotalMedioPago>7910.00000</TotalMedioPago>
+    </MedioPago>
+    <TotalComprobante>7910.00000</TotalComprobante>
+  </ResumenFactura>
+</TiqueteElectronico>

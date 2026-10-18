@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReciboElectronicoPago xmlns="https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/reciboElectronicoPago" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Clave>50601102600310122222200100001100000000001112345678</Clave>
+  <ProveedorSistemas>3101222222</ProveedorSistemas>
+  <NumeroConsecutivo>00100001100000000001</NumeroConsecutivo>
+  <FechaEmision>2026-10-01T15:00:00-06:00</FechaEmision>
+  <Emisor>
+    <Nombre>PROVEEDORA DEL ESTADO EJEMPLO S.A.</Nombre>
+    <Identificacion>
+      <Tipo>02</Tipo>
+      <Numero>3101222222</Numero>
+    </Identificacion>
+    <CorreoElectronico>tesoreria@example.com</CorreoElectronico>
+  </Emisor>
+  <Receptor>
+    <Nombre>INSTITUCION PUBLICA EJEMPLO</Nombre>
+    <Identificacion>
+      <Tipo>02</Tipo>
+      <Numero>3000045678</Numero>
+    </Identificacion>
+    <CorreoElectronico>cuentasporpagar@example.com</CorreoElectronico>
+  </Receptor>
+  <CondicionVenta>09</CondicionVenta>
+  <DetalleServicio>
+    <LineaDetalle>
+      <NumeroLinea>1</NumeroLinea>
+      <Detalle>Pago correspondiente a orden de compra #OC-44556 de servicios de ingeniería</Detalle>
+      <MontoTotal>5000000.00000</MontoTotal>
+      <SubTotal>5000000.00000</SubTotal>
+      <Impuesto>
+        <Codigo>01</Codigo>
+        <CodigoTarifaIVA>08</CodigoTarifaIVA>
+        <Tarifa>13.00</Tarifa>
+        <Monto>650000.00000</Monto>
+      </Impuesto>
+      <ImpuestoNeto>650000.00000</ImpuestoNeto>
+      <MontoTotalLinea>5650000.00000</MontoTotalLinea>
+    </LineaDetalle>
+  </DetalleServicio>
+  <ResumenFactura>
+    <CodigoTipoMoneda>
+      <CodigoMoneda>CRC</CodigoMoneda>
+      <TipoCambio>1.00000</TipoCambio>
+    </CodigoTipoMoneda>
+    <TotalVenta>5000000.00000</TotalVenta>
+    <TotalVentaNeta>5000000.00000</TotalVentaNeta>
+    <TotalDesgloseImpuesto>
+      <Codigo>01</Codigo>
+      <CodigoTarifaIVA>08</CodigoTarifaIVA>
+      <TotalMontoImpuesto>650000.00000</TotalMontoImpuesto>
+    </TotalDesgloseImpuesto>
+    <TotalImpuesto>650000.00000</TotalImpuesto>
+    <MedioPago>
+      <TipoMedioPago>04</TipoMedioPago>
+      <TotalMedioPago>5000000.00000</TotalMedioPago>
+    </MedioPago>
+    <TotalComprobante>5000000.00000</TotalComprobante>
+  </ResumenFactura>
+  <InformacionReferencia>
+    <TipoDocIR>01</TipoDocIR>
+    <Numero>50601092615580000000100100001010000000030137313731</Numero>
+    <FechaEmisionIR>2026-09-01T13:48:02-06:00</FechaEmisionIR>
+    <Codigo>04</Codigo>
+    <Razon>Recibo de pago por liquidación de factura estatal</Razon>
+  </InformacionReferencia>
+</ReciboElectronicoPago>

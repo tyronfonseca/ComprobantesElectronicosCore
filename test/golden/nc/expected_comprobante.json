@@ -1,0 +1,106 @@
+{
+  "Clave": "50601102600310199999900100001030000000001112345678",
+  "ProveedorSistemas": "3101999999",
+  "CodigoActividadEmisor": "620101",
+  "NumeroConsecutivo": "00100001030000000001",
+  "FechaEmision": "2026-10-01T10:00:00-06:00",
+  "Emisor": {
+    "Nombre": "SOLUCIONES DIGITALES EJEMPLO S.A.",
+    "Identificacion": {
+      "Tipo": "02",
+      "Numero": "3101999999"
+    },
+    "NombreComercial": "Soluciones Ejemplo",
+    "Ubicacion": {
+      "Provincia": "1",
+      "Canton": "01",
+      "Distrito": "01",
+      "OtrasSenas": "Avenida 7, Calle 3"
+    },
+    "Telefono": {
+      "CodigoPais": 506,
+      "NumTelefono": 22223333
+    },
+    "CorreoElectronico": [
+      "facturacion@example.com"
+    ]
+  },
+  "Receptor": {
+    "Nombre": "CLIENTE CORPORATIVO EJEMPLO S.A.",
+    "Identificacion": {
+      "Tipo": "02",
+      "Numero": "3101888888"
+    },
+    "Ubicacion": {
+      "Provincia": "1",
+      "Canton": "01",
+      "Distrito": "01",
+      "OtrasSenas": "De la rotonda 100m Este"
+    },
+    "Telefono": {
+      "CodigoPais": 506,
+      "NumTelefono": 22000606
+    },
+    "CorreoElectronico": "compras@example.com"
+  },
+  "CondicionVenta": "01",
+  "DetalleServicio": {
+    "LineaDetalle": [
+      {
+        "NumeroLinea": 1,
+        "CodigoCABYS": "8314100000200",
+        "Cantidad": "1.000",
+        "UnidadMedida": "Sp",
+        "Detalle": "Anulación de servicios de desarrollo de software",
+        "PrecioUnitario": "89270.00000",
+        "MontoTotal": "89270.00000",
+        "SubTotal": "89270.00000",
+        "BaseImponible": "89270.00000",
+        "Impuesto": [
+          {
+            "Codigo": "01",
+            "CodigoTarifaIVA": "08",
+            "Tarifa": "13.00",
+            "Monto": "11605.10000"
+          }
+        ],
+        "ImpuestoNeto": "11605.10000",
+        "MontoTotalLinea": "100875.10000"
+      }
+    ]
+  },
+  "ResumenFactura": {
+    "CodigoTipoMoneda": {
+      "CodigoMoneda": "CRC",
+      "TipoCambio": "1.00000"
+    },
+    "TotalServGravados": "89270.00000",
+    "TotalGravado": "89270.00000",
+    "TotalVenta": "89270.00000",
+    "TotalVentaNeta": "89270.00000",
+    "TotalDesgloseImpuesto": [
+      {
+        "Codigo": "01",
+        "CodigoTarifaIVA": "08",
+        "TotalMontoImpuesto": "11605.10000"
+      }
+    ],
+    "TotalImpuesto": "11605.10000",
+    "MedioPago": [
+      {
+        "TipoMedioPago": "04",
+        "TotalMedioPago": "100875.10000"
+      }
+    ],
+    "TotalComprobante": "100875.10000"
+  },
+  "InformacionReferencia": [
+    {
+      "TipoDocIR": "01",
+      "Numero": "50601092615580000000100100001010000000030137313731",
+      "FechaEmisionIR": "2026-09-01T13:48:02-06:00",
+      "Codigo": "01",
+      "Razon": "Anulación total por corrección de datos en factura"
+    }
+  ]
+}

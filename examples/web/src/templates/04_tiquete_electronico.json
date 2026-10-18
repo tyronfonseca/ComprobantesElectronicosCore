@@ -1,0 +1,68 @@
+{
+  "tipoDocumento": "04",
+  "clave": "50601102600310100080800100001040000000001140000001",
+  "proveedorSistemas": "3101000999",
+  "numeroConsecutivo": "00100001040000000001",
+  "fechaEmision": "2026-10-01T10:00:00-06:00",
+  "codigoActividadEmisor": "4711.0",
+  "emisor": {
+    "nombre": "MINISUPER EJEMPLO S.A.",
+    "identificacion": {
+      "tipo": "02",
+      "numero": "3101000808"
+    },
+    "nombreComercial": "Minisuper Ejemplo",
+    "ubicacion": {
+      "provincia": "1",
+      "canton": "01",
+      "distrito": "08",
+      "otrasSenas": "Avenida 10, edificio azul, piso 2"
+    },
+    "telefono": {
+      "codigoPais": "506",
+      "numTelefono": "22000101"
+    },
+    "correoElectronico": [
+      "caja@minisuper.example.com"
+    ]
+  },
+  "condicionVenta": "01",
+  "detalleServicio": [
+    {
+      "codigoCABYS": "2399999000000",
+      "cantidad": "2",
+      "unidadMedida": "Unid",
+      "detalle": "Galletas surtidas",
+      "precioUnitario": "950",
+      "impuestos": [
+        {
+          "codigo": "01",
+          "codigoTarifaIVA": "08"
+        }
+      ]
+    },
+    {
+      "codigoCABYS": "0113101000000",
+      "cantidad": "1",
+      "unidadMedida": "Kg",
+      "detalle": "Arroz",
+      "precioUnitario": "1200",
+      "impuestos": [
+        {
+          "codigo": "01",
+          "codigoTarifaIVA": "02"
+        }
+      ]
+    }
+  ],
+  "resumenFactura": {
+    "codigoTipoMoneda": {
+      "codigoMoneda": "CRC"
+    },
+    "mediosPago": [
+      {
+        "tipoMedioPago": "01"
+      }
+    ]
+  }
+}

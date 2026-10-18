@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:FacturaElectronicaCore}",
+            "name": "Debug FacturaSwiftExample",
+            "target": "FacturaSwiftExample",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug FacturaSwiftExample"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:FacturaElectronicaCore}",
+            "name": "Release FacturaSwiftExample",
+            "target": "FacturaSwiftExample",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release FacturaSwiftExample"
+        }
+    ]
+}

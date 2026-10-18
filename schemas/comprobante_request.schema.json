@@ -1,0 +1,583 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:cec:comprobante-request:v4.4",
+  "title": "ComprobanteRequest",
+  "description": "Request de un comprobante electrónico v4.4: solo datos de entrada (los montos calculados los produce el motor). Cada campo se llama como su etiqueta del Anexo 1 en camelCase; las listas van en plural. La obligatoriedad de cada campo según el tipo de comprobante la valida el motor de reglas.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "tipoDocumento",
+    "emisor"
+  ],
+  "properties": {
+    "tipoDocumento": {
+      "$ref": "#/$defs/codigo",
+      "description": "Nota 3: 01 FE, 02 ND, 03 NC, 04 TE, 08 FEC, 09 FEE, 10 REP"
+    },
+    "clave": {
+      "type": "string",
+      "minLength": 50,
+      "maxLength": 50
+    },
+    "proveedorSistemas": {
+      "type": "string"
+    },
+    "codigoActividadEmisor": {
+      "type": "string"
+    },
+    "codigoActividadReceptor": {
+      "type": "string"
+    },
+    "numeroConsecutivo": {
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 20
+    },
+    "fechaEmision": {
+      "type": "string",
+      "description": "RFC 3339"
+    },
+    "emisor": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "nombre": {
+          "type": "string"
+        },
+        "identificacion": {
+          "$ref": "#/$defs/identificacion"
+        },
+        "registroFiscal8707": {
+          "type": "string"
+        },
+        "nombreComercial": {
+          "type": "string"
+        },
+        "ubicacion": {
+          "$ref": "#/$defs/ubicacion"
+        },
+        "otrasSenasExtranjero": {
+          "type": "string"
+        },
+        "telefono": {
+          "$ref": "#/$defs/telefono"
+        },
+        "correoElectronico": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 4
+        }
+      }
+    },
+    "receptor": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "nombre": {
+          "type": "string"
+        },
+        "identificacion": {
+          "$ref": "#/$defs/identificacion"
+        },
+        "nombreComercial": {
+          "type": "string"
+        },
+        "ubicacion": {
+          "$ref": "#/$defs/ubicacion"
+        },
+        "otrasSenasExtranjero": {
+          "type": "string"
+        },
+        "telefono": {
+          "$ref": "#/$defs/telefono"
+        },
+        "correoElectronico": {
+          "type": "string"
+        }
+      }
+    },
+    "condicionVenta": {
+      "$ref": "#/$defs/codigo",
+      "description": "Nota 5"
+    },
+    "condicionVentaOtros": {
+      "type": "string"
+    },
+    "plazoCredito": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Días"
+    },
+    "detalleServicio": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/lineaDetalle"
+      },
+      "maxItems": 1000
+    },
+    "otrosCargos": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/otrosCargos"
+      },
+      "maxItems": 15
+    },
+    "resumenFactura": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "codigoTipoMoneda": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "codigoMoneda": {
+              "type": "string"
+            },
+            "tipoCambio": {
+              "$ref": "#/$defs/decimal"
+            }
+          }
+        },
+        "mediosPago": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/medioPago"
+          },
+          "maxItems": 4
+        }
+      }
+    },
+    "informacionReferencia": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/informacionReferencia"
+      },
+      "maxItems": 10
+    }
+  },
+  "$defs": {
+    "codigo": {
+      "description": "Código de catálogo de Hacienda: texto de dos dígitos (\"01\"); también se acepta el entero (1).",
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    "decimal": {
+      "description": "Monto o cantidad. Preferiblemente texto (\"1500.50\") para no perder precisión; también se acepta número.",
+      "oneOf": [
+        {
+          "type": "string",
+          "pattern": "^-?[0-9]+(\\.[0-9]+)?$"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
+    "identificacion": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "tipo": {
+          "$ref": "#/$defs/codigo",
+          "description": "Nota 4"
+        },
+        "numero": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "tipo",
+        "numero"
+      ]
+    },
+    "ubicacion": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "provincia": {
+          "type": "string"
+        },
+        "canton": {
+          "$ref": "#/$defs/codigo"
+        },
+        "distrito": {
+          "$ref": "#/$defs/codigo"
+        },
+        "barrio": {
+          "type": "string"
+        },
+        "otrasSenas": {
+          "type": "string"
+        }
+      }
+    },
+    "telefono": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "codigoPais": {
+          "type": "string"
+        },
+        "numTelefono": {
+          "type": "string"
+        }
+      }
+    },
+    "codigoComercial": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "tipo": {
+          "$ref": "#/$defs/codigo",
+          "description": "Nota 12"
+        },
+        "codigo": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "tipo",
+        "codigo"
+      ]
+    },
+    "descuento": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "montoDescuento": {
+          "$ref": "#/$defs/decimal"
+        },
+        "codigoDescuento": {
+          "$ref": "#/$defs/codigo",
+          "description": "Nota 20"
+        },
+        "codigoDescuentoOTRO": {
+          "type": "string",
+          "description": "Con código 99"
+        },
+        "naturalezaDescuento": {
+          "type": "string",
+          "description": "Con código 99"
+        }
+      },
+      "required": [
+        "montoDescuento",
+        "codigoDescuento"
+      ]
+    },
+    "impuesto": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "codigo": {
+          "$ref": "#/$defs/codigo",
+          "description": "Nota 8"
+        },
+        "codigoImpuestoOTRO": {
+          "type": "string",
+          "description": "Con código 99"
+        },
+        "codigoTarifaIVA": {
+          "$ref": "#/$defs/codigo",
+          "description": "Nota 8.1; con los códigos 01 y 07. La tarifa del IVA sale de este código."
+        },
+        "tarifa": {
+          "$ref": "#/$defs/decimal",
+          "description": "Tarifa propia de los impuestos 02, 12 y 99 (13 = 13%)"
+        },
+        "factorCalculoIVA": {
+          "$ref": "#/$defs/decimal",
+          "description": "Con el código 08"
+        },
+        "datosImpuestoEspecifico": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "cantidadUnidadMedida": {
+              "$ref": "#/$defs/decimal"
+            },
+            "porcentaje": {
+              "$ref": "#/$defs/decimal"
+            },
+            "proporcion": {
+              "$ref": "#/$defs/decimal"
+            },
+            "volumenUnidadConsumo": {
+              "$ref": "#/$defs/decimal"
+            },
+            "impuestoUnidad": {
+              "$ref": "#/$defs/decimal"
+            }
+          },
+          "description": "Con los códigos 03, 04, 05 y 06"
+        },
+        "montoExportacion": {
+          "$ref": "#/$defs/decimal",
+          "description": "FEE, NC y ND: exportación de mercancías con impuestos especiales"
+        }
+      },
+      "required": [
+        "codigo"
+      ]
+    },
+    "exoneracion": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "tipoDocumentoEX1": {
+          "$ref": "#/$defs/codigo",
+          "description": "Nota 10.1"
+        },
+        "tipoDocumentoOTRO": {
+          "type": "string"
+        },
+        "numeroDocumento": {
+          "type": "string"
+        },
+        "articulo": {
+          "type": "integer"
+        },
+        "inciso": {
+          "type": "integer"
+        },
+        "nombreInstitucion": {
+          "$ref": "#/$defs/codigo",
+          "description": "Nota 23"
+        },
+        "nombreInstitucionOtros": {
+          "type": "string"
+        },
+        "fechaEmisionEX": {
+          "type": "string"
+        },
+        "tarifaExonerada": {
+          "$ref": "#/$defs/decimal"
+        }
+      },
+      "description": "Exonera el IVA de la línea; en el XML va dentro del Impuesto de IVA."
+    },
+    "lineaDetalleSurtido": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "codigoCABYS": {
+          "type": "string"
+        },
+        "codigosComerciales": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/codigoComercial"
+          },
+          "maxItems": 5
+        },
+        "cantidad": {
+          "$ref": "#/$defs/decimal"
+        },
+        "unidadMedida": {
+          "type": "string"
+        },
+        "unidadMedidaComercial": {
+          "type": "string"
+        },
+        "detalle": {
+          "type": "string"
+        },
+        "precioUnitario": {
+          "$ref": "#/$defs/decimal"
+        },
+        "descuentos": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/descuento"
+          },
+          "maxItems": 5
+        },
+        "impuestos": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/impuesto"
+          }
+        }
+      }
+    },
+    "lineaDetalle": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "numeroLinea": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Correlativo 1..N; si se omite se numera según la posición"
+        },
+        "partidaArancelaria": {
+          "type": "string"
+        },
+        "codigoCABYS": {
+          "type": "string"
+        },
+        "codigosComerciales": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/codigoComercial"
+          },
+          "maxItems": 5
+        },
+        "cantidad": {
+          "$ref": "#/$defs/decimal"
+        },
+        "unidadMedida": {
+          "type": "string"
+        },
+        "tipoTransaccion": {
+          "$ref": "#/$defs/codigo",
+          "description": "Nota 22"
+        },
+        "unidadMedidaComercial": {
+          "type": "string"
+        },
+        "detalle": {
+          "type": "string"
+        },
+        "numerosVINoSerie": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 1000
+        },
+        "registroMedicamento": {
+          "type": "string"
+        },
+        "formaFarmaceutica": {
+          "type": "string"
+        },
+        "detalleSurtido": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/lineaDetalleSurtido"
+          },
+          "maxItems": 20
+        },
+        "precioUnitario": {
+          "$ref": "#/$defs/decimal"
+        },
+        "montoTotal": {
+          "$ref": "#/$defs/decimal",
+          "description": "Solo REP: monto a pagar de lo facturado, sin impuestos"
+        },
+        "descuentos": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/descuento"
+          },
+          "maxItems": 5
+        },
+        "subTotal": {
+          "$ref": "#/$defs/decimal",
+          "description": "Solo REP: monto del pago a registrar para el cálculo del IVA"
+        },
+        "ivaCobradoFabrica": {
+          "$ref": "#/$defs/codigo",
+          "description": "Nota 21"
+        },
+        "baseImponible": {
+          "$ref": "#/$defs/decimal",
+          "description": "Solo cuando es editable (IVACobradoFabrica 01 o impuesto 07)"
+        },
+        "impuestos": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/impuesto"
+          }
+        },
+        "impuestoAsumidoEmisorFabrica": {
+          "$ref": "#/$defs/decimal"
+        },
+        "exoneracion": {
+          "$ref": "#/$defs/exoneracion"
+        }
+      }
+    },
+    "otrosCargos": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "tipoDocumentoOC": {
+          "$ref": "#/$defs/codigo",
+          "description": "Nota 16"
+        },
+        "tipoDocumentoOTROS": {
+          "type": "string"
+        },
+        "identificacionTercero": {
+          "$ref": "#/$defs/identificacion"
+        },
+        "nombreTercero": {
+          "type": "string"
+        },
+        "detalle": {
+          "type": "string"
+        },
+        "porcentajeOC": {
+          "$ref": "#/$defs/decimal"
+        },
+        "montoCargo": {
+          "$ref": "#/$defs/decimal"
+        }
+      }
+    },
+    "medioPago": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "tipoMedioPago": {
+          "$ref": "#/$defs/codigo",
+          "description": "Nota 6"
+        },
+        "medioPagoOtros": {
+          "type": "string"
+        },
+        "totalMedioPago": {
+          "$ref": "#/$defs/decimal"
+        }
+      }
+    },
+    "informacionReferencia": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "tipoDocIR": {
+          "$ref": "#/$defs/codigo",
+          "description": "Nota 10"
+        },
+        "tipoDocRefOTRO": {
+          "type": "string"
+        },
+        "numero": {
+          "type": "string"
+        },
+        "fechaEmisionIR": {
+          "type": "string"
+        },
+        "codigo": {
+          "$ref": "#/$defs/codigo",
+          "description": "Nota 9"
+        },
+        "codigoReferenciaOTRO": {
+          "type": "string"
+        },
+        "razon": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+module ComprobantesElectronicosCoreC {
+    header "cec_c_api.h"
+    export *
+}

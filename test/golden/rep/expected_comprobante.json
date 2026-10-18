@@ -1,0 +1,77 @@
+{
+  "Clave": "50601102600310122222200100001100000000001112345678",
+  "ProveedorSistemas": "3101222222",
+  "NumeroConsecutivo": "00100001100000000001",
+  "FechaEmision": "2026-10-01T15:00:00-06:00",
+  "Emisor": {
+    "Nombre": "PROVEEDORA DEL ESTADO EJEMPLO S.A.",
+    "Identificacion": {
+      "Tipo": "02",
+      "Numero": "3101222222"
+    },
+    "CorreoElectronico": [
+      "tesoreria@example.com"
+    ]
+  },
+  "Receptor": {
+    "Nombre": "INSTITUCION PUBLICA EJEMPLO",
+    "Identificacion": {
+      "Tipo": "02",
+      "Numero": "3000045678"
+    },
+    "CorreoElectronico": "cuentasporpagar@example.com"
+  },
+  "CondicionVenta": "09",
+  "DetalleServicio": {
+    "LineaDetalle": [
+      {
+        "NumeroLinea": 1,
+        "Detalle": "Pago correspondiente a orden de compra #OC-44556 de servicios de ingeniería",
+        "MontoTotal": "5000000.00000",
+        "SubTotal": "5000000.00000",
+        "Impuesto": [
+          {
+            "Codigo": "01",
+            "CodigoTarifaIVA": "08",
+            "Tarifa": "13.00",
+            "Monto": "650000.00000"
+          }
+        ],
+        "ImpuestoNeto": "650000.00000",
+        "MontoTotalLinea": "5650000.00000"
+      }
+    ]
+  },
+  "ResumenFactura": {
+    "CodigoTipoMoneda": {
+      "CodigoMoneda": "CRC",
+      "TipoCambio": "1.00000"
+    },
+    "TotalVenta": "5000000.00000",
+    "TotalVentaNeta": "5000000.00000",
+    "TotalDesgloseImpuesto": [
+      {
+        "Codigo": "01",
+        "CodigoTarifaIVA": "08",
+        "TotalMontoImpuesto": "650000.00000"
+      }
+    ],
+    "TotalImpuesto": "650000.00000",
+    "MedioPago": [
+      {
+        "TipoMedioPago": "04",
+        "TotalMedioPago": "5000000.00000"
+      }
+    ],
+    "TotalComprobante": "5000000.00000"
+  },
+  "InformacionReferencia": [
+    {
+      "TipoDocIR": "01",
+      "Numero": "50601092615580000000100100001010000000030137313731",
+      "FechaEmisionIR": "2026-09-01T13:48:02-06:00",
+      "Codigo": "04",
+      "Razon": "Recibo de pago por liquidación de factura estatal"
+    }
+  ]
+}

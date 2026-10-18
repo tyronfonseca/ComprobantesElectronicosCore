@@ -1,0 +1,145 @@
+{
+  "tipoDocumento": "01",
+  "clave": "50601102600310199999900100001010000000001112345678",
+  "proveedorSistemas": "3101999999",
+  "codigoActividadEmisor": "471101",
+  "codigoActividadReceptor": "681001",
+  "numeroConsecutivo": "00100001010000000001",
+  "fechaEmision": "2026-10-01T10:30:00-06:00",
+  "emisor": {
+    "nombre": "DISTRIBUIDORA DE ALIMENTOS EJEMPLO S.A.",
+    "identificacion": {
+      "tipo": "02",
+      "numero": "3101999999"
+    },
+    "nombreComercial": "Distribuidora Ejemplo",
+    "ubicacion": {
+      "provincia": "1",
+      "canton": "01",
+      "distrito": "01",
+      "barrio": "Carmen",
+      "otrasSenas": "Costado norte del parque"
+    },
+    "telefono": {
+      "codigoPais": "506",
+      "numTelefono": "22224444"
+    },
+    "correoElectronico": [
+      "ventas@example.com"
+    ]
+  },
+  "receptor": {
+    "nombre": "CORPORACION COMERCIAL EJEMPLO S.A.",
+    "identificacion": {
+      "tipo": "02",
+      "numero": "3101000202"
+    },
+    "ubicacion": {
+      "provincia": "1",
+      "canton": "01",
+      "distrito": "02",
+      "otrasSenas": "Edificio Corporativo Torre Empresarial"
+    },
+    "telefono": {
+      "codigoPais": "506",
+      "numTelefono": "22000404"
+    },
+    "correoElectronico": "proveeduria@example.com"
+  },
+  "condicionVenta": "01",
+  "detalleServicio": [
+    {
+      "numeroLinea": 1,
+      "codigoCABYS": "2399999002200",
+      "codigosComerciales": [
+        {
+          "tipo": "03",
+          "codigo": "CANASTA-PREMIUM-2026"
+        }
+      ],
+      "cantidad": "2",
+      "unidadMedida": "Unid",
+      "detalle": "Canasta Navideña Ejecutiva Premium (Combo/Surtido)",
+      "detalleSurtido": [
+        {
+          "codigoCABYS": "2111101000000",
+          "cantidad": "1",
+          "unidadMedida": "Unid",
+          "detalle": "Botella Vino Tinto Reserva 750ml",
+          "precioUnitario": "6000",
+          "impuestos": [
+            {
+              "codigo": "01",
+              "codigoTarifaIVA": "08"
+            }
+          ]
+        },
+        {
+          "codigoCABYS": "2111102000000",
+          "cantidad": "2",
+          "unidadMedida": "Unid",
+          "detalle": "Caja Galletas Finas Artesanales 300g",
+          "precioUnitario": "1500",
+          "impuestos": [
+            {
+              "codigo": "01",
+              "codigoTarifaIVA": "08"
+            }
+          ]
+        },
+        {
+          "codigoCABYS": "0111101000000",
+          "cantidad": "4",
+          "unidadMedida": "Unid",
+          "detalle": "Manzanas Frescas de Mesa",
+          "precioUnitario": "250",
+          "impuestos": [
+            {
+              "codigo": "01",
+              "codigoTarifaIVA": "02"
+            }
+          ]
+        },
+        {
+          "codigoCABYS": "0113101000000",
+          "cantidad": "1",
+          "unidadMedida": "Kg",
+          "detalle": "Café Gourmet Tarrazú Tueste Oscuro",
+          "precioUnitario": "3000",
+          "impuestos": [
+            {
+              "codigo": "01",
+              "codigoTarifaIVA": "10"
+            }
+          ]
+        }
+      ],
+      "precioUnitario": "13000",
+      "impuestos": [
+        {
+          "codigo": "01",
+          "codigoTarifaIVA": "08"
+        },
+        {
+          "codigo": "01",
+          "codigoTarifaIVA": "02"
+        },
+        {
+          "codigo": "01",
+          "codigoTarifaIVA": "10"
+        }
+      ]
+    }
+  ],
+  "resumenFactura": {
+    "codigoTipoMoneda": {
+      "codigoMoneda": "CRC",
+      "tipoCambio": "1"
+    },
+    "mediosPago": [
+      {
+        "tipoMedioPago": "04"
+      }
+    ]
+  }
+}

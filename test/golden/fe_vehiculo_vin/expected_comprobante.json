@@ -1,0 +1,109 @@
+{
+  "Clave": "50601102600310199999900100001010000000002112345678",
+  "ProveedorSistemas": "3101999999",
+  "CodigoActividadEmisor": "451001",
+  "CodigoActividadReceptor": "681001",
+  "NumeroConsecutivo": "00100001010000000002",
+  "FechaEmision": "2026-10-01T11:00:00-06:00",
+  "Emisor": {
+    "Nombre": "AGENCIA DE VEHICULOS EJEMPLO S.A.",
+    "Identificacion": {
+      "Tipo": "02",
+      "Numero": "3101999999"
+    },
+    "NombreComercial": "Autos Ejemplo",
+    "Ubicacion": {
+      "Provincia": "1",
+      "Canton": "01",
+      "Distrito": "01",
+      "Barrio": "Carmen",
+      "OtrasSenas": "Costado norte del parque"
+    },
+    "Telefono": {
+      "CodigoPais": 506,
+      "NumTelefono": 22224444
+    },
+    "CorreoElectronico": [
+      "ventas@example.com"
+    ]
+  },
+  "Receptor": {
+    "Nombre": "DISTRIBUIDORA COMERCIAL EJEMPLO S.A.",
+    "Identificacion": {
+      "Tipo": "02",
+      "Numero": "3101000202"
+    },
+    "Ubicacion": {
+      "Provincia": "1",
+      "Canton": "01",
+      "Distrito": "02",
+      "OtrasSenas": "Torre Empresarial"
+    },
+    "Telefono": {
+      "CodigoPais": 506,
+      "NumTelefono": 22000404
+    },
+    "CorreoElectronico": "compras@example.com"
+  },
+  "CondicionVenta": "01",
+  "DetalleServicio": {
+    "LineaDetalle": [
+      {
+        "NumeroLinea": 1,
+        "CodigoCABYS": "4911101000000",
+        "CodigoComercial": [
+          {
+            "Tipo": "03",
+            "Codigo": "SEDAN-2026-AUTO"
+          }
+        ],
+        "Cantidad": "1.000",
+        "UnidadMedida": "Unid",
+        "Detalle": "Automóvil Sedán Modelo 2026 1.5L Automático",
+        "NumeroVINoSerie": [
+          "1HGCR2F83HA000001"
+        ],
+        "PrecioUnitario": "15000000.00000",
+        "MontoTotal": "15000000.00000",
+        "SubTotal": "15000000.00000",
+        "BaseImponible": "15000000.00000",
+        "Impuesto": [
+          {
+            "Codigo": "01",
+            "CodigoTarifaIVA": "08",
+            "Tarifa": "13.00",
+            "Monto": "1950000.00000"
+          }
+        ],
+        "ImpuestoAsumidoEmisorFabrica": "0.00000",
+        "ImpuestoNeto": "1950000.00000",
+        "MontoTotalLinea": "16950000.00000"
+      }
+    ]
+  },
+  "ResumenFactura": {
+    "CodigoTipoMoneda": {
+      "CodigoMoneda": "CRC",
+      "TipoCambio": "1.00000"
+    },
+    "TotalMercanciasGravadas": "15000000.00000",
+    "TotalGravado": "15000000.00000",
+    "TotalVenta": "15000000.00000",
+    "TotalVentaNeta": "15000000.00000",
+    "TotalDesgloseImpuesto": [
+      {
+        "Codigo": "01",
+        "CodigoTarifaIVA": "08",
+        "TotalMontoImpuesto": "1950000.00000"
+      }
+    ],
+    "TotalImpuesto": "1950000.00000",
+    "MedioPago": [
+      {
+        "TipoMedioPago": "04",
+        "TotalMedioPago": "16950000.00000"
+      }
+    ],
+    "TotalComprobante": "16950000.00000"
+  }
+}

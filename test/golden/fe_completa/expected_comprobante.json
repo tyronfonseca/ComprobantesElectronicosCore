@@ -1,0 +1,205 @@
+{
+  "Clave": "50601092615580000000100100001010000000030137313731",
+  "ProveedorSistemas": "3101225890",
+  "CodigoActividadEmisor": "6201.0",
+  "CodigoActividadReceptor": "6810.0",
+  "NumeroConsecutivo": "00100001010000000030",
+  "FechaEmision": "2026-09-01T13:48:02-06:00",
+  "Emisor": {
+    "Nombre": "EMISOR EJEMPLO CON DIMEX",
+    "Identificacion": {
+      "Tipo": "03",
+      "Numero": "155800000001"
+    },
+    "NombreComercial": "Software Ejemplo",
+    "Ubicacion": {
+      "Provincia": "1",
+      "Canton": "08",
+      "Distrito": "01",
+      "Barrio": "Centro",
+      "OtrasSenas": "Casa 12, portón negro"
+    },
+    "Telefono": {
+      "CodigoPais": 506,
+      "NumTelefono": 22000101
+    },
+    "CorreoElectronico": [
+      "facturacion@example.com"
+    ]
+  },
+  "Receptor": {
+    "Nombre": "CLIENTE EJEMPLO S.A.",
+    "Identificacion": {
+      "Tipo": "02",
+      "Numero": "3101000202"
+    },
+    "Ubicacion": {
+      "Provincia": "4",
+      "Canton": "08",
+      "Distrito": "03",
+      "OtrasSenas": "Edificio Ejemplo, piso 3"
+    },
+    "Telefono": {
+      "CodigoPais": 506,
+      "NumTelefono": 22000202
+    },
+    "CorreoElectronico": "facturaelectronica@example.com"
+  },
+  "CondicionVenta": "01",
+  "DetalleServicio": {
+    "LineaDetalle": [
+      {
+        "NumeroLinea": 1,
+        "CodigoCABYS": "8314100000200",
+        "CodigoComercial": [
+          {
+            "Tipo": "01",
+            "Codigo": "SERV-001"
+          }
+        ],
+        "Cantidad": "1.000",
+        "UnidadMedida": "Sp",
+        "Detalle": "Orden de compra 4500907121 - Septiembre 2026",
+        "PrecioUnitario": "89270.00000",
+        "MontoTotal": "89270.00000",
+        "Descuento": [
+          {
+            "MontoDescuento": "1000.00000",
+            "CodigoDescuento": "99",
+            "CodigoDescuentoOTRO": "Promocion especial",
+            "NaturalezaDescuento": "Descuento por volumen"
+          }
+        ],
+        "SubTotal": "88270.00000",
+        "BaseImponible": "88270.00000",
+        "Impuesto": [
+          {
+            "Codigo": "01",
+            "CodigoTarifaIVA": "08",
+            "Tarifa": "13.00",
+            "Monto": "11475.10000",
+            "Exoneracion": {
+              "TipoDocumentoEX1": "04",
+              "NumeroDocumento": "AL-00012345-24",
+              "NombreInstitucion": "01",
+              "FechaEmisionEX": "2026-01-15T00:00:00-06:00",
+              "TarifaExonerada": "13.00",
+              "MontoExoneracion": "11475.10000"
+            }
+          }
+        ],
+        "ImpuestoAsumidoEmisorFabrica": "0.00000",
+        "ImpuestoNeto": "0.00000",
+        "MontoTotalLinea": "88270.00000"
+      },
+      {
+        "NumeroLinea": 2,
+        "CodigoCABYS": "4523000000000",
+        "CodigoComercial": [
+          {
+            "Tipo": "04",
+            "Codigo": "LAP-14"
+          }
+        ],
+        "Cantidad": "3.000",
+        "UnidadMedida": "Unid",
+        "Detalle": "Computadora portatil 14 pulgadas",
+        "PrecioUnitario": "450000.50000",
+        "MontoTotal": "1350001.50000",
+        "Descuento": [
+          {
+            "MontoDescuento": "15000.00000",
+            "CodigoDescuento": "07"
+          }
+        ],
+        "SubTotal": "1335001.50000",
+        "BaseImponible": "1335001.50000",
+        "Impuesto": [
+          {
+            "Codigo": "01",
+            "CodigoTarifaIVA": "08",
+            "Tarifa": "13.00",
+            "Monto": "173550.19500"
+          }
+        ],
+        "ImpuestoAsumidoEmisorFabrica": "0.00000",
+        "ImpuestoNeto": "173550.19500",
+        "MontoTotalLinea": "1508551.69500"
+      },
+      {
+        "NumeroLinea": 3,
+        "CodigoCABYS": "0111101000000",
+        "Cantidad": "12.500",
+        "UnidadMedida": "Kg",
+        "Detalle": "Arroz pilado",
+        "PrecioUnitario": "1200.00000",
+        "MontoTotal": "15000.00000",
+        "SubTotal": "15000.00000",
+        "BaseImponible": "15000.00000",
+        "Impuesto": [
+          {
+            "Codigo": "01",
+            "CodigoTarifaIVA": "02",
+            "Tarifa": "1.00",
+            "Monto": "150.00000"
+          }
+        ],
+        "ImpuestoAsumidoEmisorFabrica": "0.00000",
+        "ImpuestoNeto": "150.00000",
+        "MontoTotalLinea": "15150.00000"
+      }
+    ]
+  },
+  "OtrosCargos": [
+    {
+      "TipoDocumentoOC": "06",
+      "Detalle": "Servicio 10% de ley",
+      "PorcentajeOC": "10.00000",
+      "MontoCargo": "8827.00000"
+    },
+    {
+      "TipoDocumentoOC": "04",
+      "IdentificacionTercero": {
+        "Tipo": "02",
+        "Numero": "3101000202"
+      },
+      "NombreTercero": "TRANSPORTES EJEMPLO S.A.",
+      "Detalle": "Flete por cuenta de tercero",
+      "MontoCargo": "25000.00000"
+    }
+  ],
+  "ResumenFactura": {
+    "CodigoTipoMoneda": {
+      "CodigoMoneda": "CRC",
+      "TipoCambio": "1.00000"
+    },
+    "TotalServExonerado": "89270.00000",
+    "TotalMercanciasGravadas": "1365001.50000",
+    "TotalGravado": "1365001.50000",
+    "TotalExonerado": "89270.00000",
+    "TotalVenta": "1454271.50000",
+    "TotalDescuentos": "16000.00000",
+    "TotalVentaNeta": "1438271.50000",
+    "TotalDesgloseImpuesto": [
+      {
+        "Codigo": "01",
+        "CodigoTarifaIVA": "08",
+        "TotalMontoImpuesto": "173550.19500"
+      },
+      {
+        "Codigo": "01",
+        "CodigoTarifaIVA": "02",
+        "TotalMontoImpuesto": "150.00000"
+      }
+    ],
+    "TotalImpuesto": "173700.19500",
+    "TotalOtrosCargos": "33827.00000",
+    "MedioPago": [
+      {
+        "TipoMedioPago": "04",
+        "TotalMedioPago": "1645798.69500"
+      }
+    ],
+    "TotalComprobante": "1645798.69500"
+  }
+}

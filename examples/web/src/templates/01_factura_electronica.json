@@ -1,0 +1,100 @@
+{
+  "tipoDocumento": "01",
+  "clave": "50601102600310100010100100001010000000001110000001",
+  "proveedorSistemas": "3101000999",
+  "numeroConsecutivo": "00100001010000000001",
+  "fechaEmision": "2026-10-01T10:00:00-06:00",
+  "codigoActividadEmisor": "6201.0",
+  "codigoActividadReceptor": "4690.0",
+  "emisor": {
+    "nombre": "SOLUCIONES DE SOFTWARE EJEMPLO S.A.",
+    "identificacion": {
+      "tipo": "02",
+      "numero": "3101000101"
+    },
+    "nombreComercial": "Software Ejemplo",
+    "ubicacion": {
+      "provincia": "1",
+      "canton": "01",
+      "distrito": "08",
+      "otrasSenas": "Avenida 10, edificio azul, piso 2"
+    },
+    "telefono": {
+      "codigoPais": "506",
+      "numTelefono": "22000101"
+    },
+    "correoElectronico": [
+      "facturacion@software.example.com"
+    ]
+  },
+  "receptor": {
+    "nombre": "COMERCIALIZADORA CLIENTE EJEMPLO S.A.",
+    "identificacion": {
+      "tipo": "02",
+      "numero": "3101000202"
+    },
+    "ubicacion": {
+      "provincia": "4",
+      "canton": "01",
+      "distrito": "01",
+      "otrasSenas": "100 metros norte del parque central"
+    },
+    "telefono": {
+      "codigoPais": "506",
+      "numTelefono": "22000202"
+    },
+    "correoElectronico": "cuentasporpagar@cliente.example.com"
+  },
+  "condicionVenta": "02",
+  "plazoCredito": 30,
+  "detalleServicio": [
+    {
+      "codigoCABYS": "8314100000200",
+      "codigosComerciales": [
+        {
+          "tipo": "01",
+          "codigo": "DEV-HORA"
+        }
+      ],
+      "cantidad": "40",
+      "unidadMedida": "h",
+      "detalle": "Desarrollo de software a la medida (horas)",
+      "precioUnitario": "25000",
+      "impuestos": [
+        {
+          "codigo": "01",
+          "codigoTarifaIVA": "08"
+        }
+      ]
+    },
+    {
+      "codigoCABYS": "8314100000200",
+      "cantidad": "1",
+      "unidadMedida": "Sp",
+      "detalle": "Capacitación de usuarios",
+      "precioUnitario": "150000",
+      "descuentos": [
+        {
+          "montoDescuento": "15000",
+          "codigoDescuento": "07"
+        }
+      ],
+      "impuestos": [
+        {
+          "codigo": "01",
+          "codigoTarifaIVA": "08"
+        }
+      ]
+    }
+  ],
+  "resumenFactura": {
+    "codigoTipoMoneda": {
+      "codigoMoneda": "CRC"
+    },
+    "mediosPago": [
+      {
+        "tipoMedioPago": "04"
+      }
+    ]
+  }
+}

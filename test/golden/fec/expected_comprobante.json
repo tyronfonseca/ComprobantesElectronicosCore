@@ -1,0 +1,106 @@
+{
+  "Clave": "50601102600310133333300100001080000000001112345678",
+  "ProveedorSistemas": "3101333333",
+  "CodigoActividadReceptor": "011301",
+  "NumeroConsecutivo": "00100001080000000001",
+  "FechaEmision": "2026-10-01T09:00:00-06:00",
+  "Emisor": {
+    "Nombre": "PRODUCTOR EJEMPLO (NO INSCRITO)",
+    "Identificacion": {
+      "Tipo": "01",
+      "Numero": "100000909"
+    },
+    "Ubicacion": {
+      "Provincia": "1",
+      "Canton": "09",
+      "Distrito": "02",
+      "OtrasSenas": "Finca La Cosecha"
+    },
+    "Telefono": {
+      "CodigoPais": 506,
+      "NumTelefono": 22000505
+    },
+    "CorreoElectronico": [
+      "juanperez@example.com"
+    ]
+  },
+  "Receptor": {
+    "Nombre": "BENEFICIO DE CAFE EJEMPLO S.A.",
+    "Identificacion": {
+      "Tipo": "02",
+      "Numero": "3101333333"
+    },
+    "NombreComercial": "Beneficio Ejemplo",
+    "Ubicacion": {
+      "Provincia": "1",
+      "Canton": "19",
+      "Distrito": "01",
+      "OtrasSenas": "Frente al Beneficio Central"
+    },
+    "Telefono": {
+      "CodigoPais": 506,
+      "NumTelefono": 22000303
+    },
+    "CorreoElectronico": "compras@example.com"
+  },
+  "CondicionVenta": "01",
+  "DetalleServicio": {
+    "LineaDetalle": [
+      {
+        "NumeroLinea": 1,
+        "CodigoCABYS": "0113101000000",
+        "Cantidad": "50.000",
+        "UnidadMedida": "Unid",
+        "Detalle": "Compra de café en fruta en cosecha directa",
+        "PrecioUnitario": "45000.00000",
+        "MontoTotal": "2250000.00000",
+        "SubTotal": "2250000.00000",
+        "BaseImponible": "2250000.00000",
+        "Impuesto": [
+          {
+            "Codigo": "01",
+            "CodigoTarifaIVA": "02",
+            "Tarifa": "1.00",
+            "Monto": "22500.00000"
+          }
+        ],
+        "ImpuestoNeto": "22500.00000",
+        "MontoTotalLinea": "2272500.00000"
+      }
+    ]
+  },
+  "ResumenFactura": {
+    "CodigoTipoMoneda": {
+      "CodigoMoneda": "CRC",
+      "TipoCambio": "1.00000"
+    },
+    "TotalMercanciasGravadas": "2250000.00000",
+    "TotalGravado": "2250000.00000",
+    "TotalVenta": "2250000.00000",
+    "TotalVentaNeta": "2250000.00000",
+    "TotalDesgloseImpuesto": [
+      {
+        "Codigo": "01",
+        "CodigoTarifaIVA": "02",
+        "TotalMontoImpuesto": "22500.00000"
+      }
+    ],
+    "TotalImpuesto": "22500.00000",
+    "MedioPago": [
+      {
+        "TipoMedioPago": "04",
+        "TotalMedioPago": "2272500.00000"
+      }
+    ],
+    "TotalComprobante": "2272500.00000"
+  },
+  "InformacionReferencia": [
+    {
+      "TipoDocIR": "14",
+      "Numero": "REC-AGRO-00123",
+      "FechaEmisionIR": "2026-10-01T09:00:00-06:00",
+      "Codigo": "04",
+      "Razon": "Comprobante de compra a productor del regimen especial agropecuario"
+    }
+  ]
+}

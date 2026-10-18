@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FacturaElectronicaCompra xmlns="https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronicaCompra" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Clave>50601102600310133333300100001080000000001112345678</Clave>
+  <ProveedorSistemas>3101333333</ProveedorSistemas>
+  <CodigoActividadReceptor>011301</CodigoActividadReceptor>
+  <NumeroConsecutivo>00100001080000000001</NumeroConsecutivo>
+  <FechaEmision>2026-10-01T09:00:00-06:00</FechaEmision>
+  <Emisor>
+    <Nombre>PRODUCTOR EJEMPLO (NO INSCRITO)</Nombre>
+    <Identificacion>
+      <Tipo>01</Tipo>
+      <Numero>100000909</Numero>
+    </Identificacion>
+    <Ubicacion>
+      <Provincia>1</Provincia>
+      <Canton>09</Canton>
+      <Distrito>02</Distrito>
+      <OtrasSenas>Finca La Cosecha</OtrasSenas>
+    </Ubicacion>
+    <Telefono>
+      <CodigoPais>506</CodigoPais>
+      <NumTelefono>22000505</NumTelefono>
+    </Telefono>
+    <CorreoElectronico>juanperez@example.com</CorreoElectronico>
+  </Emisor>
+  <Receptor>
+    <Nombre>BENEFICIO DE CAFE EJEMPLO S.A.</Nombre>
+    <Identificacion>
+      <Tipo>02</Tipo>
+      <Numero>3101333333</Numero>
+    </Identificacion>
+    <NombreComercial>Beneficio Ejemplo</NombreComercial>
+    <Ubicacion>
+      <Provincia>1</Provincia>
+      <Canton>19</Canton>
+      <Distrito>01</Distrito>
+      <OtrasSenas>Frente al Beneficio Central</OtrasSenas>
+    </Ubicacion>
+    <Telefono>
+      <CodigoPais>506</CodigoPais>
+      <NumTelefono>22000303</NumTelefono>
+    </Telefono>
+    <CorreoElectronico>compras@example.com</CorreoElectronico>
+  </Receptor>
+  <CondicionVenta>01</CondicionVenta>
+  <DetalleServicio>
+    <LineaDetalle>
+      <NumeroLinea>1</NumeroLinea>
+      <CodigoCABYS>0113101000000</CodigoCABYS>
+      <Cantidad>50.000</Cantidad>
+      <UnidadMedida>Unid</UnidadMedida>
+      <Detalle>Compra de café en fruta en cosecha directa</Detalle>
+      <PrecioUnitario>45000.00000</PrecioUnitario>
+      <MontoTotal>2250000.00000</MontoTotal>
+      <SubTotal>2250000.00000</SubTotal>
+      <BaseImponible>2250000.00000</BaseImponible>
+      <Impuesto>
+        <Codigo>01</Codigo>
+        <CodigoTarifaIVA>02</CodigoTarifaIVA>
+        <Tarifa>1.00</Tarifa>
+        <Monto>22500.00000</Monto>
+      </Impuesto>
+      <ImpuestoNeto>22500.00000</ImpuestoNeto>
+      <MontoTotalLinea>2272500.00000</MontoTotalLinea>
+    </LineaDetalle>
+  </DetalleServicio>
+  <ResumenFactura>
+    <CodigoTipoMoneda>
+      <CodigoMoneda>CRC</CodigoMoneda>
+      <TipoCambio>1.00000</TipoCambio>
+    </CodigoTipoMoneda>
+    <TotalMercanciasGravadas>2250000.00000</TotalMercanciasGravadas>
+    <TotalGravado>2250000.00000</TotalGravado>
+    <TotalVenta>2250000.00000</TotalVenta>
+    <TotalVentaNeta>2250000.00000</TotalVentaNeta>
+    <TotalDesgloseImpuesto>
+      <Codigo>01</Codigo>
+      <CodigoTarifaIVA>02</CodigoTarifaIVA>
+      <TotalMontoImpuesto>22500.00000</TotalMontoImpuesto>
+    </TotalDesgloseImpuesto>
+    <TotalImpuesto>22500.00000</TotalImpuesto>
+    <MedioPago>
+      <TipoMedioPago>04</TipoMedioPago>
+      <TotalMedioPago>2272500.00000</TotalMedioPago>
+    </MedioPago>
+    <TotalComprobante>2272500.00000</TotalComprobante>
+  </ResumenFactura>
+  <InformacionReferencia>
+    <TipoDocIR>14</TipoDocIR>
+    <Numero>REC-AGRO-00123</Numero>
+    <FechaEmisionIR>2026-10-01T09:00:00-06:00</FechaEmisionIR>
+    <Codigo>04</Codigo>
+    <Razon>Comprobante de compra a productor del regimen especial agropecuario</Razon>
+  </InformacionReferencia>
+</FacturaElectronicaCompra>

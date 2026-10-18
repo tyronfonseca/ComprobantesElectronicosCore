@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FacturaElectronicaExportacion xmlns="https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronicaExportacion" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Clave>50601102600310155555500100001090000000001112345678</Clave>
+  <ProveedorSistemas>3101555555</ProveedorSistemas>
+  <CodigoActividadEmisor>620101</CodigoActividadEmisor>
+  <NumeroConsecutivo>00100001090000000001</NumeroConsecutivo>
+  <FechaEmision>2026-10-01T14:00:00-06:00</FechaEmision>
+  <Emisor>
+    <Nombre>EXPORTADORA DE SOFTWARE EJEMPLO S.A.</Nombre>
+    <Identificacion>
+      <Tipo>02</Tipo>
+      <Numero>3101555555</Numero>
+    </Identificacion>
+    <Ubicacion>
+      <Provincia>1</Provincia>
+      <Canton>01</Canton>
+      <Distrito>01</Distrito>
+      <OtrasSenas>Zona franca, edificio 4</OtrasSenas>
+    </Ubicacion>
+    <Telefono>
+      <CodigoPais>506</CodigoPais>
+      <NumTelefono>22001122</NumTelefono>
+    </Telefono>
+    <CorreoElectronico>export@example.com</CorreoElectronico>
+  </Emisor>
+  <Receptor>
+    <Nombre>EXAMPLE IMPORTS LLC</Nombre>
+    <Identificacion>
+      <Tipo>05</Tipo>
+      <Numero>998877665</Numero>
+    </Identificacion>
+    <OtrasSenasExtranjero>100 Example Street, Springfield, USA</OtrasSenasExtranjero>
+    <Telefono>
+      <CodigoPais>1</CodigoPais>
+      <NumTelefono>4155551234</NumTelefono>
+    </Telefono>
+    <CorreoElectronico>accounting@example.com</CorreoElectronico>
+  </Receptor>
+  <CondicionVenta>01</CondicionVenta>
+  <DetalleServicio>
+    <LineaDetalle>
+      <NumeroLinea>1</NumeroLinea>
+      <CodigoCABYS>8314101000000</CodigoCABYS>
+      <Cantidad>160.000</Cantidad>
+      <UnidadMedida>Sp</UnidadMedida>
+      <Detalle>Enterprise Software Engineering &amp; Cloud Support Services</Detalle>
+      <PrecioUnitario>50.00000</PrecioUnitario>
+      <MontoTotal>8000.00000</MontoTotal>
+      <SubTotal>8000.00000</SubTotal>
+      <Impuesto>
+        <Codigo>01</Codigo>
+        <CodigoTarifaIVA>09</CodigoTarifaIVA>
+        <Tarifa>0.50</Tarifa>
+        <Monto>40.00000</Monto>
+      </Impuesto>
+      <MontoTotalLinea>8040.00000</MontoTotalLinea>
+    </LineaDetalle>
+  </DetalleServicio>
+  <ResumenFactura>
+    <CodigoTipoMoneda>
+      <CodigoMoneda>USD</CodigoMoneda>
+      <TipoCambio>515.00000</TipoCambio>
+    </CodigoTipoMoneda>
+    <TotalServGravados>8000.00000</TotalServGravados>
+    <TotalGravado>8000.00000</TotalGravado>
+    <TotalVenta>8000.00000</TotalVenta>
+    <TotalVentaNeta>8000.00000</TotalVentaNeta>
+    <TotalDesgloseImpuesto>
+      <Codigo>01</Codigo>
+      <CodigoTarifaIVA>09</CodigoTarifaIVA>
+      <TotalMontoImpuesto>40.00000</TotalMontoImpuesto>
+    </TotalDesgloseImpuesto>
+    <TotalImpuesto>40.00000</TotalImpuesto>
+    <MedioPago>
+      <TipoMedioPago>04</TipoMedioPago>
+      <TotalMedioPago>8040.00000</TotalMedioPago>
+    </MedioPago>
+    <TotalComprobante>8040.00000</TotalComprobante>
+  </ResumenFactura>
+</FacturaElectronicaExportacion>

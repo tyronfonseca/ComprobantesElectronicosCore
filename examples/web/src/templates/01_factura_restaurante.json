@@ -1,0 +1,89 @@
+{
+  "tipoDocumento": "01",
+  "clave": "50601102600310200030300100001010000000002110000002",
+  "proveedorSistemas": "3101000999",
+  "numeroConsecutivo": "00100001010000000002",
+  "fechaEmision": "2026-10-01T10:00:00-06:00",
+  "codigoActividadEmisor": "5610.1",
+  "emisor": {
+    "nombre": "RESTAURANTE EJEMPLO LIMITADA",
+    "identificacion": {
+      "tipo": "02",
+      "numero": "3102000303"
+    },
+    "nombreComercial": "Restaurante Ejemplo",
+    "ubicacion": {
+      "provincia": "1",
+      "canton": "01",
+      "distrito": "08",
+      "otrasSenas": "Avenida 10, edificio azul, piso 2"
+    },
+    "telefono": {
+      "codigoPais": "506",
+      "numTelefono": "22000101"
+    },
+    "correoElectronico": [
+      "facturas@restaurante.example.com"
+    ]
+  },
+  "receptor": {
+    "nombre": "MARIA EJEMPLO EJEMPLO",
+    "identificacion": {
+      "tipo": "01",
+      "numero": "100000303"
+    },
+    "correoElectronico": "maria@correo.example.com"
+  },
+  "condicionVenta": "01",
+  "detalleServicio": [
+    {
+      "codigoCABYS": "6331100000100",
+      "cantidad": "2",
+      "unidadMedida": "Unid",
+      "detalle": "Casado con pescado",
+      "precioUnitario": "6500",
+      "impuestos": [
+        {
+          "codigo": "01",
+          "codigoTarifaIVA": "08"
+        }
+      ]
+    },
+    {
+      "codigoCABYS": "6331100000100",
+      "cantidad": "2",
+      "unidadMedida": "Unid",
+      "detalle": "Refresco natural",
+      "precioUnitario": "1800",
+      "impuestos": [
+        {
+          "codigo": "01",
+          "codigoTarifaIVA": "08"
+        }
+      ]
+    }
+  ],
+  "otrosCargos": [
+    {
+      "tipoDocumentoOC": "06",
+      "detalle": "Impuesto de servicio 10%",
+      "porcentajeOC": "10",
+      "montoCargo": "1660"
+    }
+  ],
+  "resumenFactura": {
+    "codigoTipoMoneda": {
+      "codigoMoneda": "CRC"
+    },
+    "mediosPago": [
+      {
+        "tipoMedioPago": "01",
+        "totalMedioPago": "10000"
+      },
+      {
+        "tipoMedioPago": "02",
+        "totalMedioPago": "10418.00"
+      }
+    ]
+  }
+}

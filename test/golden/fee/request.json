@@ -1,0 +1,69 @@
+{
+  "tipoDocumento": "09",
+  "clave": "50601102600310155555500100001090000000001112345678",
+  "proveedorSistemas": "3101555555",
+  "codigoActividadEmisor": "620101",
+  "numeroConsecutivo": "00100001090000000001",
+  "fechaEmision": "2026-10-01T14:00:00-06:00",
+  "emisor": {
+    "nombre": "EXPORTADORA DE SOFTWARE EJEMPLO S.A.",
+    "identificacion": {
+      "tipo": "02",
+      "numero": "3101555555"
+    },
+    "ubicacion": {
+      "provincia": "1",
+      "canton": "01",
+      "distrito": "01",
+      "otrasSenas": "Zona franca, edificio 4"
+    },
+    "telefono": {
+      "codigoPais": "506",
+      "numTelefono": "22001122"
+    },
+    "correoElectronico": [
+      "export@example.com"
+    ]
+  },
+  "receptor": {
+    "nombre": "EXAMPLE IMPORTS LLC",
+    "identificacion": {
+      "tipo": "05",
+      "numero": "998877665"
+    },
+    "otrasSenasExtranjero": "100 Example Street, Springfield, USA",
+    "telefono": {
+      "codigoPais": "1",
+      "numTelefono": "4155551234"
+    },
+    "correoElectronico": "accounting@example.com"
+  },
+  "condicionVenta": "01",
+  "detalleServicio": [
+    {
+      "numeroLinea": 1,
+      "codigoCABYS": "8314101000000",
+      "cantidad": "160",
+      "unidadMedida": "Sp",
+      "detalle": "Enterprise Software Engineering & Cloud Support Services",
+      "precioUnitario": "50",
+      "impuestos": [
+        {
+          "codigo": "01",
+          "codigoTarifaIVA": "09"
+        }
+      ]
+    }
+  ],
+  "resumenFactura": {
+    "codigoTipoMoneda": {
+      "codigoMoneda": "USD",
+      "tipoCambio": "515"
+    },
+    "mediosPago": [
+      {
+        "tipoMedioPago": "04"
+      }
+    ]
+  }
+}

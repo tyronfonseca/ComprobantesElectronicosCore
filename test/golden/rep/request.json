@@ -1,0 +1,60 @@
+{
+  "tipoDocumento": "10",
+  "clave": "50601102600310122222200100001100000000001112345678",
+  "proveedorSistemas": "3101222222",
+  "numeroConsecutivo": "00100001100000000001",
+  "fechaEmision": "2026-10-01T15:00:00-06:00",
+  "emisor": {
+    "nombre": "PROVEEDORA DEL ESTADO EJEMPLO S.A.",
+    "identificacion": {
+      "tipo": "02",
+      "numero": "3101222222"
+    },
+    "correoElectronico": [
+      "tesoreria@example.com"
+    ]
+  },
+  "receptor": {
+    "nombre": "INSTITUCION PUBLICA EJEMPLO",
+    "identificacion": {
+      "tipo": "02",
+      "numero": "3000045678"
+    },
+    "correoElectronico": "cuentasporpagar@example.com"
+  },
+  "condicionVenta": "09",
+  "detalleServicio": [
+    {
+      "numeroLinea": 1,
+      "detalle": "Pago correspondiente a orden de compra #OC-44556 de servicios de ingeniería",
+      "montoTotal": "5000000",
+      "subTotal": "5000000",
+      "impuestos": [
+        {
+          "codigo": "01",
+          "codigoTarifaIVA": "08"
+        }
+      ]
+    }
+  ],
+  "resumenFactura": {
+    "codigoTipoMoneda": {
+      "codigoMoneda": "CRC",
+      "tipoCambio": "1"
+    },
+    "mediosPago": [
+      {
+        "tipoMedioPago": "04"
+      }
+    ]
+  },
+  "informacionReferencia": [
+    {
+      "tipoDocIR": "01",
+      "numero": "50601092615580000000100100001010000000030137313731",
+      "fechaEmisionIR": "2026-09-01T13:48:02-06:00",
+      "codigo": "04",
+      "razon": "Recibo de pago por liquidación de factura estatal"
+    }
+  ]
+}

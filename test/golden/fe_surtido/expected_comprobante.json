@@ -1,0 +1,190 @@
+{
+  "Clave": "50601102600310199999900100001010000000001112345678",
+  "ProveedorSistemas": "3101999999",
+  "CodigoActividadEmisor": "471101",
+  "CodigoActividadReceptor": "681001",
+  "NumeroConsecutivo": "00100001010000000001",
+  "FechaEmision": "2026-10-01T10:30:00-06:00",
+  "Emisor": {
+    "Nombre": "DISTRIBUIDORA DE ALIMENTOS EJEMPLO S.A.",
+    "Identificacion": {
+      "Tipo": "02",
+      "Numero": "3101999999"
+    },
+    "NombreComercial": "Distribuidora Ejemplo",
+    "Ubicacion": {
+      "Provincia": "1",
+      "Canton": "01",
+      "Distrito": "01",
+      "Barrio": "Carmen",
+      "OtrasSenas": "Costado norte del parque"
+    },
+    "Telefono": {
+      "CodigoPais": 506,
+      "NumTelefono": 22224444
+    },
+    "CorreoElectronico": [
+      "ventas@example.com"
+    ]
+  },
+  "Receptor": {
+    "Nombre": "CORPORACION COMERCIAL EJEMPLO S.A.",
+    "Identificacion": {
+      "Tipo": "02",
+      "Numero": "3101000202"
+    },
+    "Ubicacion": {
+      "Provincia": "1",
+      "Canton": "01",
+      "Distrito": "02",
+      "OtrasSenas": "Edificio Corporativo Torre Empresarial"
+    },
+    "Telefono": {
+      "CodigoPais": 506,
+      "NumTelefono": 22000404
+    },
+    "CorreoElectronico": "proveeduria@example.com"
+  },
+  "CondicionVenta": "01",
+  "DetalleServicio": {
+    "LineaDetalle": [
+      {
+        "NumeroLinea": 1,
+        "CodigoCABYS": "2399999002200",
+        "CodigoComercial": [
+          {
+            "Tipo": "03",
+            "Codigo": "CANASTA-PREMIUM-2026"
+          }
+        ],
+        "Cantidad": "2.000",
+        "UnidadMedida": "Unid",
+        "Detalle": "Canasta Navideña Ejecutiva Premium (Combo/Surtido)",
+        "DetalleSurtido": {
+          "LineaDetalleSurtido": [
+            {
+              "CodigoCABYSSurtido": "2111101000000",
+              "CantidadSurtido": "1.000",
+              "UnidadMedidaSurtido": "Unid",
+              "DetalleSurtido": "Botella Vino Tinto Reserva 750ml",
+              "PrecioUnitarioSurtido": "6000.00000",
+              "MontoTotalSurtido": "6000.00000",
+              "SubTotalSurtido": "6000.00000",
+              "BaseImponibleSurtido": "6000.00000",
+              "ImpuestoSurtido": [
+                {
+                  "CodigoImpuestoSurtido": "01",
+                  "CodigoTarifaIVASurtido": "08",
+                  "TarifaSurtido": "13.00",
+                  "MontoImpuestoSurtido": "780.00000"
+                }
+              ]
+            },
+            {
+              "CodigoCABYSSurtido": "2111102000000",
+              "CantidadSurtido": "2.000",
+              "UnidadMedidaSurtido": "Unid",
+              "DetalleSurtido": "Caja Galletas Finas Artesanales 300g",
+              "PrecioUnitarioSurtido": "1500.00000",
+              "MontoTotalSurtido": "3000.00000",
+              "SubTotalSurtido": "3000.00000",
+              "BaseImponibleSurtido": "3000.00000",
+              "ImpuestoSurtido": [
+                {
+                  "CodigoImpuestoSurtido": "01",
+                  "CodigoTarifaIVASurtido": "08",
+                  "TarifaSurtido": "13.00",
+                  "MontoImpuestoSurtido": "390.00000"
+                }
+              ]
+            },
+            {
+              "CodigoCABYSSurtido": "0111101000000",
+              "CantidadSurtido": "4.000",
+              "UnidadMedidaSurtido": "Unid",
+              "DetalleSurtido": "Manzanas Frescas de Mesa",
+              "PrecioUnitarioSurtido": "250.00000",
+              "MontoTotalSurtido": "1000.00000",
+              "SubTotalSurtido": "1000.00000",
+              "BaseImponibleSurtido": "1000.00000",
+              "ImpuestoSurtido": [
+                {
+                  "CodigoImpuestoSurtido": "01",
+                  "CodigoTarifaIVASurtido": "02",
+                  "TarifaSurtido": "1.00",
+                  "MontoImpuestoSurtido": "10.00000"
+                }
+              ]
+            },
+            {
+              "CodigoCABYSSurtido": "0113101000000",
+              "CantidadSurtido": "1.000",
+              "UnidadMedidaSurtido": "Kg",
+              "DetalleSurtido": "Café Gourmet Tarrazú Tueste Oscuro",
+              "PrecioUnitarioSurtido": "3000.00000",
+              "MontoTotalSurtido": "3000.00000",
+              "SubTotalSurtido": "3000.00000",
+              "BaseImponibleSurtido": "3000.00000",
+              "ImpuestoSurtido": [
+                {
+                  "CodigoImpuestoSurtido": "01",
+                  "CodigoTarifaIVASurtido": "10",
+                  "TarifaSurtido": "0.00",
+                  "MontoImpuestoSurtido": "0.00000"
+                }
+              ]
+            }
+          ]
+        },
+        "PrecioUnitario": "13000.00000",
+        "MontoTotal": "26000.00000",
+        "SubTotal": "26000.00000",
+        "BaseImponible": "26000.00000",
+        "Impuesto": [
+          {
+            "Codigo": "01",
+            "Monto": "2360.00000"
+          }
+        ],
+        "ImpuestoAsumidoEmisorFabrica": "0.00000",
+        "ImpuestoNeto": "2360.00000",
+        "MontoTotalLinea": "28360.00000"
+      }
+    ]
+  },
+  "ResumenFactura": {
+    "CodigoTipoMoneda": {
+      "CodigoMoneda": "CRC",
+      "TipoCambio": "1.00000"
+    },
+    "TotalMercanciasGravadas": "26000.00000",
+    "TotalGravado": "26000.00000",
+    "TotalVenta": "26000.00000",
+    "TotalVentaNeta": "26000.00000",
+    "TotalDesgloseImpuesto": [
+      {
+        "Codigo": "01",
+        "CodigoTarifaIVA": "08",
+        "TotalMontoImpuesto": "2340.00000"
+      },
+      {
+        "Codigo": "01",
+        "CodigoTarifaIVA": "02",
+        "TotalMontoImpuesto": "20.00000"
+      },
+      {
+        "Codigo": "01",
+        "CodigoTarifaIVA": "10",
+        "TotalMontoImpuesto": "0.00000"
+      }
+    ],
+    "TotalImpuesto": "2360.00000",
+    "MedioPago": [
+      {
+        "TipoMedioPago": "04",
+        "TotalMedioPago": "28360.00000"
+      }
+    ],
+    "TotalComprobante": "28360.00000"
+  }
+}

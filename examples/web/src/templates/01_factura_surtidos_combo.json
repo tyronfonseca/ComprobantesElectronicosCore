@@ -1,0 +1,120 @@
+{
+  "tipoDocumento": "01",
+  "clave": "50601102600310100050500100001010000000004110000004",
+  "proveedorSistemas": "3101000999",
+  "numeroConsecutivo": "00100001010000000004",
+  "fechaEmision": "2026-10-01T10:00:00-06:00",
+  "codigoActividadEmisor": "4711.0",
+  "emisor": {
+    "nombre": "SUPERMERCADO EJEMPLO S.A.",
+    "identificacion": {
+      "tipo": "02",
+      "numero": "3101000505"
+    },
+    "nombreComercial": "Super Ejemplo",
+    "ubicacion": {
+      "provincia": "1",
+      "canton": "01",
+      "distrito": "08",
+      "otrasSenas": "Avenida 10, edificio azul, piso 2"
+    },
+    "telefono": {
+      "codigoPais": "506",
+      "numTelefono": "22000101"
+    },
+    "correoElectronico": [
+      "facturacion@super.example.com"
+    ]
+  },
+  "receptor": {
+    "nombre": "COMERCIALIZADORA CLIENTE EJEMPLO S.A.",
+    "identificacion": {
+      "tipo": "02",
+      "numero": "3101000202"
+    },
+    "ubicacion": {
+      "provincia": "4",
+      "canton": "01",
+      "distrito": "01",
+      "otrasSenas": "100 metros norte del parque central"
+    },
+    "telefono": {
+      "codigoPais": "506",
+      "numTelefono": "22000202"
+    },
+    "correoElectronico": "cuentasporpagar@cliente.example.com"
+  },
+  "condicionVenta": "01",
+  "detalleServicio": [
+    {
+      "codigoCABYS": "2399999002200",
+      "codigosComerciales": [
+        {
+          "tipo": "03",
+          "codigo": "7400000000017"
+        }
+      ],
+      "cantidad": "2",
+      "unidadMedida": "Unid",
+      "detalle": "Canasta de productos alimenticios",
+      "precioUnitario": "6500",
+      "impuestos": [
+        {
+          "codigo": "01",
+          "codigoTarifaIVA": "08"
+        }
+      ],
+      "detalleSurtido": [
+        {
+          "codigoCABYS": "2111101000000",
+          "cantidad": "1",
+          "unidadMedida": "Unid",
+          "detalle": "Galletas finas 300 g",
+          "precioUnitario": "2500",
+          "impuestos": [
+            {
+              "codigo": "01",
+              "codigoTarifaIVA": "08"
+            }
+          ]
+        },
+        {
+          "codigoCABYS": "0111101000000",
+          "cantidad": "4",
+          "unidadMedida": "Unid",
+          "detalle": "Manzanas",
+          "precioUnitario": "250",
+          "impuestos": [
+            {
+              "codigo": "01",
+              "codigoTarifaIVA": "02"
+            }
+          ]
+        },
+        {
+          "codigoCABYS": "0113101000000",
+          "cantidad": "1",
+          "unidadMedida": "Kg",
+          "detalle": "Café molido",
+          "precioUnitario": "3000",
+          "impuestos": [
+            {
+              "codigo": "01",
+              "codigoTarifaIVA": "10"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "resumenFactura": {
+    "codigoTipoMoneda": {
+      "codigoMoneda": "CRC"
+    },
+    "mediosPago": [
+      {
+        "tipoMedioPago": "02"
+      }
+    ]
+  }
+}

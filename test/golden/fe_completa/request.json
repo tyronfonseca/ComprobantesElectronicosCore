@@ -1,0 +1,156 @@
+{
+  "tipoDocumento": "01",
+  "clave": "50601092615580000000100100001010000000030137313731",
+  "proveedorSistemas": "3101225890",
+  "codigoActividadEmisor": "6201.0",
+  "codigoActividadReceptor": "6810.0",
+  "numeroConsecutivo": "00100001010000000030",
+  "fechaEmision": "2026-09-01T13:48:02-06:00",
+  "emisor": {
+    "nombre": "EMISOR EJEMPLO CON DIMEX",
+    "identificacion": {
+      "tipo": "03",
+      "numero": "155800000001"
+    },
+    "nombreComercial": "Software Ejemplo",
+    "ubicacion": {
+      "provincia": "1",
+      "canton": "08",
+      "distrito": "01",
+      "barrio": "Centro",
+      "otrasSenas": "Casa 12, portón negro"
+    },
+    "telefono": {
+      "codigoPais": "506",
+      "numTelefono": "22000101"
+    },
+    "correoElectronico": [
+      "facturacion@example.com"
+    ]
+  },
+  "receptor": {
+    "nombre": "CLIENTE EJEMPLO S.A.",
+    "identificacion": {
+      "tipo": "02",
+      "numero": "3101000202"
+    },
+    "ubicacion": {
+      "provincia": "4",
+      "canton": "08",
+      "distrito": "03",
+      "otrasSenas": "Edificio Ejemplo, piso 3"
+    },
+    "telefono": {
+      "codigoPais": "506",
+      "numTelefono": "22000202"
+    },
+    "correoElectronico": "facturaelectronica@example.com"
+  },
+  "condicionVenta": "01",
+  "detalleServicio": [
+    {
+      "numeroLinea": 1,
+      "codigoCABYS": "8314100000200",
+      "cantidad": "1",
+      "unidadMedida": "Sp",
+      "detalle": "Orden de compra 4500907121 - Septiembre 2026",
+      "precioUnitario": "89270",
+      "impuestos": [
+        {
+          "codigo": "01",
+          "codigoTarifaIVA": "08"
+        }
+      ],
+      "codigosComerciales": [
+        {
+          "tipo": "01",
+          "codigo": "SERV-001"
+        }
+      ],
+      "descuentos": [
+        {
+          "montoDescuento": "1000",
+          "codigoDescuento": "99",
+          "codigoDescuentoOTRO": "Promocion especial",
+          "naturalezaDescuento": "Descuento por volumen"
+        }
+      ],
+      "exoneracion": {
+        "tipoDocumentoEX1": "04",
+        "numeroDocumento": "AL-00012345-24",
+        "nombreInstitucion": "01",
+        "fechaEmisionEX": "2026-01-15T00:00:00-06:00",
+        "tarifaExonerada": "13"
+      }
+    },
+    {
+      "numeroLinea": 2,
+      "codigoCABYS": "4523000000000",
+      "codigosComerciales": [
+        {
+          "tipo": "04",
+          "codigo": "LAP-14"
+        }
+      ],
+      "cantidad": "3",
+      "unidadMedida": "Unid",
+      "detalle": "Computadora portatil 14 pulgadas",
+      "precioUnitario": "450000.50",
+      "descuentos": [
+        {
+          "montoDescuento": "15000",
+          "codigoDescuento": "07"
+        }
+      ],
+      "impuestos": [
+        {
+          "codigo": "01",
+          "codigoTarifaIVA": "08"
+        }
+      ]
+    },
+    {
+      "numeroLinea": 3,
+      "codigoCABYS": "0111101000000",
+      "cantidad": "12.5",
+      "unidadMedida": "Kg",
+      "detalle": "Arroz pilado",
+      "precioUnitario": "1200",
+      "impuestos": [
+        {
+          "codigo": "01",
+          "codigoTarifaIVA": "02"
+        }
+      ]
+    }
+  ],
+  "resumenFactura": {
+    "codigoTipoMoneda": {
+      "codigoMoneda": "CRC",
+      "tipoCambio": "1"
+    },
+    "mediosPago": [
+      {
+        "tipoMedioPago": "04"
+      }
+    ]
+  },
+  "otrosCargos": [
+    {
+      "tipoDocumentoOC": "06",
+      "detalle": "Servicio 10% de ley",
+      "porcentajeOC": "10",
+      "montoCargo": "8827"
+    },
+    {
+      "tipoDocumentoOC": "04",
+      "identificacionTercero": {
+        "tipo": "02",
+        "numero": "3101000202"
+      },
+      "nombreTercero": "TRANSPORTES EJEMPLO S.A.",
+      "detalle": "Flete por cuenta de tercero",
+      "montoCargo": "25000"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "tipoDocumento": "08",
+  "clave": "50601102600310100090900100001080000000001180000001",
+  "proveedorSistemas": "3101000999",
+  "numeroConsecutivo": "00100001080000000001",
+  "fechaEmision": "2026-10-01T10:00:00-06:00",
+  "codigoActividadReceptor": "1079.0",
+  "emisor": {
+    "nombre": "PEDRO PRODUCTOR EJEMPLO",
+    "identificacion": {
+      "tipo": "01",
+      "numero": "100000909"
+    },
+    "ubicacion": {
+      "provincia": "1",
+      "canton": "19",
+      "distrito": "01",
+      "otrasSenas": "Finca Ejemplo, 2 km al este de la escuela"
+    },
+    "correoElectronico": [
+      "pedro@correo.example.com"
+    ]
+  },
+  "receptor": {
+    "nombre": "BENEFICIO DE CAFE EJEMPLO S.A.",
+    "identificacion": {
+      "tipo": "02",
+      "numero": "3101000909"
+    },
+    "ubicacion": {
+      "provincia": "4",
+      "canton": "01",
+      "distrito": "01",
+      "otrasSenas": "100 metros norte del parque central"
+    },
+    "telefono": {
+      "codigoPais": "506",
+      "numTelefono": "22000202"
+    },
+    "correoElectronico": "cuentasporpagar@cliente.example.com"
+  },
+  "condicionVenta": "01",
+  "detalleServicio": [
+    {
+      "codigoCABYS": "0161100000100",
+      "cantidad": "50",
+      "unidadMedida": "Unid",
+      "detalle": "Café en fruta (fanegas)",
+      "precioUnitario": "45000",
+      "impuestos": [
+        {
+          "codigo": "01",
+          "codigoTarifaIVA": "02"
+        }
+      ]
+    }
+  ],
+  "resumenFactura": {
+    "codigoTipoMoneda": {
+      "codigoMoneda": "CRC"
+    },
+    "mediosPago": [
+      {
+        "tipoMedioPago": "04"
+      }
+    ]
+  },
+  "informacionReferencia": [
+    {
+      "tipoDocIR": "14",
+      "numero": "REG-ESP-0001",
+      "fechaEmisionIR": "2026-10-01T10:00:00-06:00",
+      "codigo": "04",
+      "razon": "Compra a productor del régimen especial agropecuario"
+    }
+  ]
+}

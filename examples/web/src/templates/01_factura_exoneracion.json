@@ -1,0 +1,87 @@
+{
+  "tipoDocumento": "01",
+  "clave": "50601102600310100040400100001010000000003110000003",
+  "proveedorSistemas": "3101000999",
+  "numeroConsecutivo": "00100001010000000003",
+  "fechaEmision": "2026-10-01T10:00:00-06:00",
+  "codigoActividadEmisor": "4651.0",
+  "codigoActividadReceptor": "8510.0",
+  "emisor": {
+    "nombre": "DISTRIBUIDORA DE EQUIPO EJEMPLO S.A.",
+    "identificacion": {
+      "tipo": "02",
+      "numero": "3101000404"
+    },
+    "nombreComercial": "Equipo Ejemplo",
+    "ubicacion": {
+      "provincia": "1",
+      "canton": "01",
+      "distrito": "08",
+      "otrasSenas": "Avenida 10, edificio azul, piso 2"
+    },
+    "telefono": {
+      "codigoPais": "506",
+      "numTelefono": "22000101"
+    },
+    "correoElectronico": [
+      "ventas@equipo.example.com"
+    ]
+  },
+  "receptor": {
+    "nombre": "ASOCIACION EDUCATIVA EJEMPLO",
+    "identificacion": {
+      "tipo": "02",
+      "numero": "3002000404"
+    },
+    "ubicacion": {
+      "provincia": "4",
+      "canton": "01",
+      "distrito": "01",
+      "otrasSenas": "100 metros norte del parque central"
+    },
+    "telefono": {
+      "codigoPais": "506",
+      "numTelefono": "22000202"
+    },
+    "correoElectronico": "cuentasporpagar@cliente.example.com"
+  },
+  "condicionVenta": "01",
+  "detalleServicio": [
+    {
+      "codigoCABYS": "4523000000000",
+      "codigosComerciales": [
+        {
+          "tipo": "04",
+          "codigo": "LAP-14"
+        }
+      ],
+      "cantidad": "10",
+      "unidadMedida": "Unid",
+      "detalle": "Computadora portátil de 14 pulgadas",
+      "precioUnitario": "420000",
+      "impuestos": [
+        {
+          "codigo": "01",
+          "codigoTarifaIVA": "08"
+        }
+      ],
+      "exoneracion": {
+        "tipoDocumentoEX1": "04",
+        "numeroDocumento": "AL-00000001-26",
+        "nombreInstitucion": "01",
+        "fechaEmisionEX": "2026-09-15T08:00:00-06:00",
+        "tarifaExonerada": "13"
+      }
+    }
+  ],
+  "resumenFactura": {
+    "codigoTipoMoneda": {
+      "codigoMoneda": "CRC"
+    },
+    "mediosPago": [
+      {
+        "tipoMedioPago": "04"
+      }
+    ]
+  }
+}

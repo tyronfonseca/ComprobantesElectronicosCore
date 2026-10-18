@@ -1,0 +1,20 @@
+{
+  "emisor": {
+    "nombre": "NOMBRE DEL EMISOR (dueño de las credenciales del API)",
+    "identificacion": { "tipo": "02", "numero": "3101000101" },
+    "codigoActividad": "6201.0",
+    "nombreComercial": "Nombre comercial",
+    "ubicacion": { "provincia": "1", "canton": "01", "distrito": "01", "otrasSenas": "Dirección exacta" },
+    "telefono": { "codigoPais": "506", "numTelefono": "22000000" },
+    "correoElectronico": "facturacion@example.com"
+  },
+  "receptor": {
+    "nombre": "NOMBRE DEL RECEPTOR",
+    "identificacion": { "tipo": "01", "numero": "100000202" },
+    "codigoActividad": "4690.0",
+    "ubicacion": { "provincia": "1", "canton": "01", "distrito": "01", "otrasSenas": "Dirección exacta" },
+    "correoElectronico": "receptor@example.com"
+  },
+  "cabys": "8314100000200",
+  "codigoTarifaIVA": "08"
+}

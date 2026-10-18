@@ -1,0 +1,55 @@
+{
+  "name": "@cec-cr/core",
+  "version": "0.2.0",
+  "type": "module",
+  "description": "Binding TypeScript/WebAssembly del core de Facturación Electrónica de Costa Rica (comprobantes v4.4)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test test/"
+  },
+  "keywords": [
+    "factura-electronica",
+    "ministerio-de-hacienda",
+    "dgt",
+    "comprobante-electronico",
+    "cr",
+    "506",
+    "costa-rica",
+    "hacienda",
+    "v4.4",
+    "xml",
+    "webassembly",
+    "wasm",
+    "typescript"
+  ],
+  "author": "Tyron Fonseca",
+  "homepage": "https://github.com/tyronfonseca/ComprobantesElectronicosCore#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tyronfonseca/ComprobantesElectronicosCore.git",
+    "directory": "bindings/typescript"
+  },
+  "bugs": {
+    "url": "https://github.com/tyronfonseca/ComprobantesElectronicosCore/issues"
+  },
+  "license": "MIT",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=22.18"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

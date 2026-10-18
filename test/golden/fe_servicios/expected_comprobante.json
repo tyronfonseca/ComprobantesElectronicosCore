@@ -1,0 +1,100 @@
+{
+  "Clave": "50601092615580000000100100001010000000030137313731",
+  "ProveedorSistemas": "3101225890",
+  "CodigoActividadEmisor": "6201.0",
+  "CodigoActividadReceptor": "6810.0",
+  "NumeroConsecutivo": "00100001010000000030",
+  "FechaEmision": "2026-09-01T13:48:02-06:00",
+  "Emisor": {
+    "Nombre": "EMISOR EJEMPLO CON DIMEX",
+    "Identificacion": {
+      "Tipo": "03",
+      "Numero": "155800000001"
+    },
+    "NombreComercial": "Software Ejemplo",
+    "Ubicacion": {
+      "Provincia": "1",
+      "Canton": "08",
+      "Distrito": "01",
+      "Barrio": "Centro",
+      "OtrasSenas": "Casa 12, portón negro"
+    },
+    "Telefono": {
+      "CodigoPais": 506,
+      "NumTelefono": 22000101
+    },
+    "CorreoElectronico": [
+      "facturacion@example.com"
+    ]
+  },
+  "Receptor": {
+    "Nombre": "CLIENTE EJEMPLO S.A.",
+    "Identificacion": {
+      "Tipo": "02",
+      "Numero": "3101000202"
+    },
+    "Ubicacion": {
+      "Provincia": "4",
+      "Canton": "08",
+      "Distrito": "03",
+      "OtrasSenas": "Edificio Ejemplo, piso 3"
+    },
+    "Telefono": {
+      "CodigoPais": 506,
+      "NumTelefono": 22000202
+    },
+    "CorreoElectronico": "facturaelectronica@example.com"
+  },
+  "CondicionVenta": "01",
+  "DetalleServicio": {
+    "LineaDetalle": [
+      {
+        "NumeroLinea": 1,
+        "CodigoCABYS": "8314100000200",
+        "Cantidad": "1.000",
+        "UnidadMedida": "Sp",
+        "Detalle": "Orden de compra 4500907121 - Septiembre 2026",
+        "PrecioUnitario": "89270.00000",
+        "MontoTotal": "89270.00000",
+        "SubTotal": "89270.00000",
+        "BaseImponible": "89270.00000",
+        "Impuesto": [
+          {
+            "Codigo": "01",
+            "CodigoTarifaIVA": "08",
+            "Tarifa": "13.00",
+            "Monto": "11605.10000"
+          }
+        ],
+        "ImpuestoAsumidoEmisorFabrica": "0.00000",
+        "ImpuestoNeto": "11605.10000",
+        "MontoTotalLinea": "100875.10000"
+      }
+    ]
+  },
+  "ResumenFactura": {
+    "CodigoTipoMoneda": {
+      "CodigoMoneda": "CRC",
+      "TipoCambio": "1.00000"
+    },
+    "TotalServGravados": "89270.00000",
+    "TotalGravado": "89270.00000",
+    "TotalVenta": "89270.00000",
+    "TotalVentaNeta": "89270.00000",
+    "TotalDesgloseImpuesto": [
+      {
+        "Codigo": "01",
+        "CodigoTarifaIVA": "08",
+        "TotalMontoImpuesto": "11605.10000"
+      }
+    ],
+    "TotalImpuesto": "11605.10000",
+    "MedioPago": [
+      {
+        "TipoMedioPago": "04",
+        "TotalMedioPago": "100875.10000"
+      }
+    ],
+    "TotalComprobante": "100875.10000"
+  }
+}

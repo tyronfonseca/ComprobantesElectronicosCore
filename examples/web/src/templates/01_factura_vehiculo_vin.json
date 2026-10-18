@@ -1,0 +1,76 @@
+{
+  "tipoDocumento": "01",
+  "clave": "50601102600310100070700100001010000000006110000006",
+  "proveedorSistemas": "3101000999",
+  "numeroConsecutivo": "00100001010000000006",
+  "fechaEmision": "2026-10-01T10:00:00-06:00",
+  "codigoActividadEmisor": "4510.0",
+  "emisor": {
+    "nombre": "AGENCIA DE VEHICULOS EJEMPLO S.A.",
+    "identificacion": {
+      "tipo": "02",
+      "numero": "3101000707"
+    },
+    "nombreComercial": "Autos Ejemplo",
+    "ubicacion": {
+      "provincia": "1",
+      "canton": "01",
+      "distrito": "08",
+      "otrasSenas": "Avenida 10, edificio azul, piso 2"
+    },
+    "telefono": {
+      "codigoPais": "506",
+      "numTelefono": "22000101"
+    },
+    "correoElectronico": [
+      "ventas@autos.example.com"
+    ]
+  },
+  "receptor": {
+    "nombre": "COMERCIALIZADORA CLIENTE EJEMPLO S.A.",
+    "identificacion": {
+      "tipo": "02",
+      "numero": "3101000202"
+    },
+    "ubicacion": {
+      "provincia": "4",
+      "canton": "01",
+      "distrito": "01",
+      "otrasSenas": "100 metros norte del parque central"
+    },
+    "telefono": {
+      "codigoPais": "506",
+      "numTelefono": "22000202"
+    },
+    "correoElectronico": "cuentasporpagar@cliente.example.com"
+  },
+  "condicionVenta": "01",
+  "detalleServicio": [
+    {
+      "codigoCABYS": "4911300000100",
+      "cantidad": "1",
+      "unidadMedida": "Unid",
+      "detalle": "Automóvil sedán 0 km",
+      "precioUnitario": "15000000",
+      "numerosVINoSerie": [
+        "JN1AA0000AA000001"
+      ],
+      "impuestos": [
+        {
+          "codigo": "01",
+          "codigoTarifaIVA": "08"
+        }
+      ]
+    }
+  ],
+  "resumenFactura": {
+    "codigoTipoMoneda": {
+      "codigoMoneda": "CRC"
+    },
+    "mediosPago": [
+      {
+        "tipoMedioPago": "04"
+      }
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "tipoDocumento": "01",
+  "clave": "50601102600310199999900100001010000000002112345678",
+  "proveedorSistemas": "3101999999",
+  "codigoActividadEmisor": "451001",
+  "codigoActividadReceptor": "681001",
+  "numeroConsecutivo": "00100001010000000002",
+  "fechaEmision": "2026-10-01T11:00:00-06:00",
+  "emisor": {
+    "nombre": "AGENCIA DE VEHICULOS EJEMPLO S.A.",
+    "identificacion": {
+      "tipo": "02",
+      "numero": "3101999999"
+    },
+    "nombreComercial": "Autos Ejemplo",
+    "ubicacion": {
+      "provincia": "1",
+      "canton": "01",
+      "distrito": "01",
+      "barrio": "Carmen",
+      "otrasSenas": "Costado norte del parque"
+    },
+    "telefono": {
+      "codigoPais": "506",
+      "numTelefono": "22224444"
+    },
+    "correoElectronico": [
+      "ventas@example.com"
+    ]
+  },
+  "receptor": {
+    "nombre": "DISTRIBUIDORA COMERCIAL EJEMPLO S.A.",
+    "identificacion": {
+      "tipo": "02",
+      "numero": "3101000202"
+    },
+    "ubicacion": {
+      "provincia": "1",
+      "canton": "01",
+      "distrito": "02",
+      "otrasSenas": "Torre Empresarial"
+    },
+    "telefono": {
+      "codigoPais": "506",
+      "numTelefono": "22000404"
+    },
+    "correoElectronico": "compras@example.com"
+  },
+  "condicionVenta": "01",
+  "detalleServicio": [
+    {
+      "numeroLinea": 1,
+      "codigoCABYS": "4911101000000",
+      "codigosComerciales": [
+        {
+          "tipo": "03",
+          "codigo": "SEDAN-2026-AUTO"
+        }
+      ],
+      "cantidad": "1",
+      "unidadMedida": "Unid",
+      "detalle": "Automóvil Sedán Modelo 2026 1.5L Automático",
+      "numerosVINoSerie": [
+        "1HGCR2F83HA000001"
+      ],
+      "precioUnitario": "15000000",
+      "impuestos": [
+        {
+          "codigo": "01",
+          "codigoTarifaIVA": "08"
+        }
+      ]
+    }
+  ],
+  "resumenFactura": {
+    "codigoTipoMoneda": {
+      "codigoMoneda": "CRC",
+      "tipoCambio": "1"
+    },
+    "mediosPago": [
+      {
+        "tipoMedioPago": "04"
+      }
+    ]
+  }
+}

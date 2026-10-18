@@ -1,0 +1,80 @@
+{
+  "Clave": "50601102600310144444400100001040000000001112345678",
+  "ProveedorSistemas": "3101444444",
+  "CodigoActividadEmisor": "471101",
+  "NumeroConsecutivo": "00100001040000000001",
+  "FechaEmision": "2026-10-01T11:00:00-06:00",
+  "Emisor": {
+    "Nombre": "SUPERMERCADO EJEMPLO S.A.",
+    "Identificacion": {
+      "Tipo": "02",
+      "Numero": "3101444444"
+    },
+    "NombreComercial": "Super Ejemplo",
+    "Ubicacion": {
+      "Provincia": "1",
+      "Canton": "01",
+      "Distrito": "01",
+      "OtrasSenas": "Calle 5, Avenida Central"
+    },
+    "Telefono": {
+      "CodigoPais": 506,
+      "NumTelefono": 22334455
+    },
+    "CorreoElectronico": [
+      "caja@example.com"
+    ]
+  },
+  "CondicionVenta": "01",
+  "DetalleServicio": {
+    "LineaDetalle": [
+      {
+        "NumeroLinea": 1,
+        "CodigoCABYS": "2399901000000",
+        "Cantidad": "2.000",
+        "UnidadMedida": "Unid",
+        "Detalle": "Artículos varios de consumo de primera necesidad",
+        "PrecioUnitario": "3500.00000",
+        "MontoTotal": "7000.00000",
+        "SubTotal": "7000.00000",
+        "BaseImponible": "7000.00000",
+        "Impuesto": [
+          {
+            "Codigo": "01",
+            "CodigoTarifaIVA": "08",
+            "Tarifa": "13.00",
+            "Monto": "910.00000"
+          }
+        ],
+        "ImpuestoAsumidoEmisorFabrica": "0.00000",
+        "ImpuestoNeto": "910.00000",
+        "MontoTotalLinea": "7910.00000"
+      }
+    ]
+  },
+  "ResumenFactura": {
+    "CodigoTipoMoneda": {
+      "CodigoMoneda": "CRC",
+      "TipoCambio": "1.00000"
+    },
+    "TotalMercanciasGravadas": "7000.00000",
+    "TotalGravado": "7000.00000",
+    "TotalVenta": "7000.00000",
+    "TotalVentaNeta": "7000.00000",
+    "TotalDesgloseImpuesto": [
+      {
+        "Codigo": "01",
+        "CodigoTarifaIVA": "08",
+        "TotalMontoImpuesto": "910.00000"
+      }
+    ],
+    "TotalImpuesto": "910.00000",
+    "MedioPago": [
+      {
+        "TipoMedioPago": "01",
+        "TotalMedioPago": "7910.00000"
+      }
+    ],
+    "TotalComprobante": "7910.00000"
+  }
+}

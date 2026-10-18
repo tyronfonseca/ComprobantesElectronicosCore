@@ -1,0 +1,58 @@
+{
+  "tipoDocumento": "10",
+  "clave": "50601102600310100010100100001100000000001111000001",
+  "proveedorSistemas": "3101000999",
+  "numeroConsecutivo": "00100001100000000001",
+  "fechaEmision": "2026-10-01T10:00:00-06:00",
+  "emisor": {
+    "nombre": "SOLUCIONES DE SOFTWARE EJEMPLO S.A.",
+    "identificacion": {
+      "tipo": "02",
+      "numero": "3101000101"
+    },
+    "correoElectronico": [
+      "facturacion@software.example.com"
+    ]
+  },
+  "receptor": {
+    "nombre": "INSTITUCION PUBLICA EJEMPLO",
+    "identificacion": {
+      "tipo": "02",
+      "numero": "3007000001"
+    },
+    "correoElectronico": "pagos@institucion.example.com"
+  },
+  "condicionVenta": "09",
+  "detalleServicio": [
+    {
+      "detalle": "Pago de la factura de servicios prestados al Estado",
+      "montoTotal": "1000000",
+      "subTotal": "1000000",
+      "impuestos": [
+        {
+          "codigo": "01",
+          "codigoTarifaIVA": "08"
+        }
+      ]
+    }
+  ],
+  "resumenFactura": {
+    "codigoTipoMoneda": {
+      "codigoMoneda": "CRC"
+    },
+    "mediosPago": [
+      {
+        "tipoMedioPago": "04"
+      }
+    ]
+  },
+  "informacionReferencia": [
+    {
+      "tipoDocIR": "01",
+      "numero": "50601102600310100010100100001010000000001110000001",
+      "fechaEmisionIR": "2026-10-01T10:00:00-06:00",
+      "codigo": "04",
+      "razon": "Pago a comprobante electrónico"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "tipoDocumento": "02",
+  "clave": "50601102600310199999900100001020000000001112345678",
+  "proveedorSistemas": "3101999999",
+  "codigoActividadEmisor": "620101",
+  "numeroConsecutivo": "00100001020000000001",
+  "fechaEmision": "2026-10-01T10:00:00-06:00",
+  "emisor": {
+    "nombre": "SOLUCIONES DIGITALES EJEMPLO S.A.",
+    "identificacion": {
+      "tipo": "02",
+      "numero": "3101999999"
+    },
+    "nombreComercial": "Soluciones Ejemplo",
+    "ubicacion": {
+      "provincia": "1",
+      "canton": "01",
+      "distrito": "01",
+      "otrasSenas": "Avenida 7, Calle 3"
+    },
+    "telefono": {
+      "codigoPais": "506",
+      "numTelefono": "22223333"
+    },
+    "correoElectronico": [
+      "facturacion@example.com"
+    ]
+  },
+  "receptor": {
+    "nombre": "CLIENTE CORPORATIVO EJEMPLO S.A.",
+    "identificacion": {
+      "tipo": "02",
+      "numero": "3101888888"
+    },
+    "ubicacion": {
+      "provincia": "1",
+      "canton": "01",
+      "distrito": "01",
+      "otrasSenas": "De la rotonda 100m Este"
+    },
+    "telefono": {
+      "codigoPais": "506",
+      "numTelefono": "22000606"
+    },
+    "correoElectronico": "compras@example.com"
+  },
+  "condicionVenta": "01",
+  "detalleServicio": [
+    {
+      "numeroLinea": 1,
+      "codigoCABYS": "8311101000000",
+      "cantidad": "1",
+      "unidadMedida": "Sp",
+      "detalle": "Intereses moratorios por pago tardío según factura referenciada",
+      "precioUnitario": "15000",
+      "impuestos": [
+        {
+          "codigo": "01",
+          "codigoTarifaIVA": "08"
+        }
+      ]
+    }
+  ],
+  "resumenFactura": {
+    "codigoTipoMoneda": {
+      "codigoMoneda": "CRC",
+      "tipoCambio": "1"
+    },
+    "mediosPago": [
+      {
+        "tipoMedioPago": "04"
+      }
+    ]
+  },
+  "informacionReferencia": [
+    {
+      "tipoDocIR": "01",
+      "numero": "50601092615580000000100100001010000000030137313731",
+      "fechaEmisionIR": "2026-09-01T13:48:02-06:00",
+      "codigo": "02",
+      "razon": "Recargo de intereses moratorios pactados"
+    }
+  ]
+}

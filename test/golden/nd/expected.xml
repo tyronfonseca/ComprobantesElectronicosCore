@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NotaDebitoElectronica xmlns="https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/notaDebitoElectronica" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Clave>50601102600310199999900100001020000000001112345678</Clave>
+  <ProveedorSistemas>3101999999</ProveedorSistemas>
+  <CodigoActividadEmisor>620101</CodigoActividadEmisor>
+  <NumeroConsecutivo>00100001020000000001</NumeroConsecutivo>
+  <FechaEmision>2026-10-01T10:00:00-06:00</FechaEmision>
+  <Emisor>
+    <Nombre>SOLUCIONES DIGITALES EJEMPLO S.A.</Nombre>
+    <Identificacion>
+      <Tipo>02</Tipo>
+      <Numero>3101999999</Numero>
+    </Identificacion>
+    <NombreComercial>Soluciones Ejemplo</NombreComercial>
+    <Ubicacion>
+      <Provincia>1</Provincia>
+      <Canton>01</Canton>
+      <Distrito>01</Distrito>
+      <OtrasSenas>Avenida 7, Calle 3</OtrasSenas>
+    </Ubicacion>
+    <Telefono>
+      <CodigoPais>506</CodigoPais>
+      <NumTelefono>22223333</NumTelefono>
+    </Telefono>
+    <CorreoElectronico>facturacion@example.com</CorreoElectronico>
+  </Emisor>
+  <Receptor>
+    <Nombre>CLIENTE CORPORATIVO EJEMPLO S.A.</Nombre>
+    <Identificacion>
+      <Tipo>02</Tipo>
+      <Numero>3101888888</Numero>
+    </Identificacion>
+    <Ubicacion>
+      <Provincia>1</Provincia>
+      <Canton>01</Canton>
+      <Distrito>01</Distrito>
+      <OtrasSenas>De la rotonda 100m Este</OtrasSenas>
+    </Ubicacion>
+    <Telefono>
+      <CodigoPais>506</CodigoPais>
+      <NumTelefono>22000606</NumTelefono>
+    </Telefono>
+    <CorreoElectronico>compras@example.com</CorreoElectronico>
+  </Receptor>
+  <CondicionVenta>01</CondicionVenta>
+  <DetalleServicio>
+    <LineaDetalle>
+      <NumeroLinea>1</NumeroLinea>
+      <CodigoCABYS>8311101000000</CodigoCABYS>
+      <Cantidad>1.000</Cantidad>
+      <UnidadMedida>Sp</UnidadMedida>
+      <Detalle>Intereses moratorios por pago tardío según factura referenciada</Detalle>
+      <PrecioUnitario>15000.00000</PrecioUnitario>
+      <MontoTotal>15000.00000</MontoTotal>
+      <SubTotal>15000.00000</SubTotal>
+      <BaseImponible>15000.00000</BaseImponible>
+      <Impuesto>
+        <Codigo>01</Codigo>
+        <CodigoTarifaIVA>08</CodigoTarifaIVA>
+        <Tarifa>13.00</Tarifa>
+        <Monto>1950.00000</Monto>
+      </Impuesto>
+      <ImpuestoNeto>1950.00000</ImpuestoNeto>
+      <MontoTotalLinea>16950.00000</MontoTotalLinea>
+    </LineaDetalle>
+  </DetalleServicio>
+  <ResumenFactura>
+    <CodigoTipoMoneda>
+      <CodigoMoneda>CRC</CodigoMoneda>
+      <TipoCambio>1.00000</TipoCambio>
+    </CodigoTipoMoneda>
+    <TotalServGravados>15000.00000</TotalServGravados>
+    <TotalGravado>15000.00000</TotalGravado>
+    <TotalVenta>15000.00000</TotalVenta>
+    <TotalVentaNeta>15000.00000</TotalVentaNeta>
+    <TotalDesgloseImpuesto>
+      <Codigo>01</Codigo>
+      <CodigoTarifaIVA>08</CodigoTarifaIVA>
+      <TotalMontoImpuesto>1950.00000</TotalMontoImpuesto>
+    </TotalDesgloseImpuesto>
+    <TotalImpuesto>1950.00000</TotalImpuesto>
+    <MedioPago>
+      <TipoMedioPago>04</TipoMedioPago>
+      <TotalMedioPago>16950.00000</TotalMedioPago>
+    </MedioPago>
+    <TotalComprobante>16950.00000</TotalComprobante>
+  </ResumenFactura>
+  <InformacionReferencia>
+    <TipoDocIR>01</TipoDocIR>
+    <Numero>50601092615580000000100100001010000000030137313731</Numero>
+    <FechaEmisionIR>2026-09-01T13:48:02-06:00</FechaEmisionIR>
+    <Codigo>02</Codigo>
+    <Razon>Recargo de intereses moratorios pactados</Razon>
+  </InformacionReferencia>
+</NotaDebitoElectronica>

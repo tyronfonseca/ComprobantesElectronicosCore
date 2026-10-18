@@ -1,0 +1,139 @@
+name: CI - Comprobantes Electronicos Core
+
+on:
+  push:
+    branches: [ master, main, develop ]
+  pull_request:
+    branches: [ master, main ]
+  workflow_dispatch:
+
+jobs:
+  # --------------------------------------------------------------------------
+  # 1. Linux Build (GCC 13)
+  # --------------------------------------------------------------------------
+  linux-build:
+    name: Linux (GCC 13)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Install dependencies and GCC compiler
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gcc-13 g++-13 make cmake ninja-build libssl-dev
+
+      - name: Build and Run Tests via Makefile
+        env:
+          CC: gcc-13
+          CXX: g++-13
+        run: |
+          make -j$(nproc) test
+          make examples
+
+      - name: Build and Test via CMake
+        env:
+          CC: gcc-13
+          CXX: g++-13
+        run: |
+          cmake -B build_cmake -DCMAKE_BUILD_TYPE=Release
+          cmake --build build_cmake --parallel $(nproc)
+          ctest --test-dir build_cmake --output-on-failure
+
+  # --------------------------------------------------------------------------
+  # 2. macOS Build (Apple Clang)
+  # --------------------------------------------------------------------------
+  macos-build:
+    name: macOS (Apple Clang)
+    runs-on: macos-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Build and Run Tests via Makefile
+        run: |
+          make -j$(sysctl -n hw.ncpu) test
+          make examples
+
+      - name: Swift binding (swift test)
+        run: |
+          brew list openssl@3 >/dev/null 2>&1 || brew install openssl@3
+          swift test
+          swift run FacturaSwiftExample
+
+      - name: Build and Test via CMake
+        run: |
+          cmake -B build_cmake -DCMAKE_BUILD_TYPE=Release
+          cmake --build build_cmake --parallel $(sysctl -n hw.ncpu)
+          ctest --test-dir build_cmake --output-on-failure
+
+      - name: Test Swift Package Manager Integration
+        run: |
+          swift build -v
+
+  # --------------------------------------------------------------------------
+  # 3. Windows Build (MSVC + Ninja)
+  # --------------------------------------------------------------------------
+  windows-build:
+    name: Windows (MSVC)
+    runs-on: windows-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Setup MSVC Developer Command Prompt
+        uses: ilammy/msvc-dev-cmd@v1
+        with:
+          arch: x64
+
+      - name: Caché de vcpkg
+        uses: actions/cache@v4
+        with:
+          # vcpkg compila OpenSSL desde el código fuente; con la caché solo ocurre la primera vez
+          path: ~/AppData/Local/vcpkg/archives
+          key: vcpkg-openssl-x64-windows-release-${{ runner.os }}
+
+      - name: Instalar OpenSSL con vcpkg (solo release)
+        run: vcpkg install openssl:x64-windows-release
+
+      - name: Configure CMake with Ninja
+        run: |
+          cmake -B build_win -G Ninja -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_TOOLCHAIN_FILE="$env:VCPKG_INSTALLATION_ROOT/scripts/buildsystems/vcpkg.cmake" -DVCPKG_TARGET_TRIPLET=x64-windows-release
+
+      - name: Build via CMake
+        run: |
+          cmake --build build_win --parallel
+
+      - name: Run Tests via CTest
+        run: |
+          ctest --test-dir build_win -C RelWithDebInfo --output-on-failure
+
+  # --------------------------------------------------------------------------
+  # 4. Scripts de Python (sin dependencias) y plantillas del ejemplo web
+  # --------------------------------------------------------------------------
+  python-scripts:
+    name: Scripts de Python
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Compilar los scripts
+        run: python3 -m py_compile scripts/*.py scripts/generadores/*.py
+
+      - name: Las plantillas del ejemplo web están al día
+        run: |
+          python3 scripts/generadores/generar_plantillas.py
+          git diff --exit-code examples/web/src/templates
+
+      - name: Los casos de referencia cumplen los XSD de Hacienda
+        run: |
+          sudo apt-get update && sudo apt-get install -y libxml2-utils
+          python3 scripts/validar_xsd.py test/golden/*/expected.xml
